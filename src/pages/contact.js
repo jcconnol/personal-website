@@ -8,7 +8,7 @@ export default function Index() {
     <div>
       <Header />
       <Sidebar />
-      Hello world
+      contact page
       <Footer />
     </div>
   )

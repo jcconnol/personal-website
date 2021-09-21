@@ -1,0 +1,15 @@
+@media (max-width: 1080px)
+.jSIwrL {
+    left: auto;
+    right: 20px;
+}
+
+.jSIwrL {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+}
