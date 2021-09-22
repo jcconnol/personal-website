@@ -1,14 +1,16 @@
 import * as React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Sidebar from "../components/sidebar"
+import LeftSidebar from "../components/left-sidebar"
+import RightSidebar from "../components/right-sidebar"
 
 export default function Index() {
   return (
     <div>
       <Header />
-      <Sidebar />
-      Hello world
+        <LeftSidebar />
+        <RightSidebar />
+        Hello world
       <Footer />
     </div>
   )

@@ -1,0 +1,19 @@
+@media (min-width: 500px){
+    .left-line {
+        border-left: 6px solid darkgray;
+        height: 30%;
+        position: absolute;
+        left: 8%;
+        margin-left: -3px;
+        top: 70%;
+    }
+
+    .right-line {
+        border-left: 6px solid darkgray;
+        height: 30%;
+        position: absolute;
+        left: 92%;
+        margin-left: -3px;
+        top: 70%;
+    }
+}

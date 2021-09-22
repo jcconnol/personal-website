@@ -1,5 +1,4 @@
 import * as React from "react"
-import Sidebar from "../components/sidebar"
 
 // markup
 const NotFoundPage = () => {

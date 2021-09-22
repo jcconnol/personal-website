@@ -1,19 +1,19 @@
 import * as React from "react"
 import { Link } from 'gatsby'
+import "../styles/header.css" 
 
 export default function Header() {
   return (
-    <div>
-      <title>John Connolly</title>
+    <div className="header">
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/experience">Experience</Link></li>
-          <li><Link to="/work">Work</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/resume.pdf">Resume</Link></li>
-        </ul>
+        <Link href="/" class="logo">CompanyLogo</Link>
+        <div className="header-right">
+          <Link to="/about">About</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/work">Work</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/resume.pdf">Resume</Link>
+          </div>
       </nav>
     </div>
   )
