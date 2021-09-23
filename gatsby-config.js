@@ -1,7 +1,28 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "autotest-cli-app",
+    title: 'Gatsby Default Starter',
+    menuLinks:[
+      {
+         name:'index',
+         link:'/'
+      },
+      {
+         name:'about',
+         link:'/about'
+      },
+      {
+         name:'contact',
+         link:'/contact'
+      },
+      {
+         name:'experience',
+         link:'/experience'
+      },
+      {
+         name:'work',
+         link:'/work'
+      }
+    ]
   },
-  plugins: [],
-};
+  plugins: []
+}

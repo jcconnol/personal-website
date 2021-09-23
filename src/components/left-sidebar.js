@@ -5,7 +5,7 @@ export default function LeftSidebar() {
   return (
     <div>
         <div className="left-vert-segment">
-            <div class="left-line"></div>
+            <div className="left-line"></div>
             <a href="mailto:jcconnol4@gmail.com">jcconnol4@gmail.com</a>
         </div>
     </div>

@@ -8,9 +8,9 @@ export default function Index() {
   return (
     <div>
       <Header />
-        <LeftSidebar />
-        <RightSidebar />
-        experience page
+      <LeftSidebar />
+      <RightSidebar />
+      experience page
       <Footer />
     </div>
   )
