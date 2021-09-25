@@ -9,9 +9,20 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-        <LeftSidebar />
-        <RightSidebar />
-        contact page
+      <LeftSidebar />
+      <RightSidebar />
+      <div className="page-content">
+        <h1>
+          <b>Contact</b>
+        </h1>
+        <div>
+          <p><b>This is something that goes on top</b></p>
+          <p>
+            This is something that goes on a page upder the top.
+            This is also under the top but also under whatever us right above this.
+          </p>
+        </div>
+      </div>
       <Footer />
     </Layout>
   )

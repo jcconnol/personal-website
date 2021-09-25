@@ -11,6 +11,9 @@ const Footer = (props) => {
   return (
     <div>
       <footer>
+        <div className="footer-line">
+          <hr />
+        </div>
         <div className="footer">
           {footerText}
         </div>

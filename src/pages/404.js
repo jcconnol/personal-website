@@ -7,9 +7,11 @@ const NotFoundPage = () => {
   return (
     <div>
       <Header />
-      <h1 className="centered">
-        PAGE NOT FOUND
-      </h1>
+      <div className="page-content">
+        <h1>
+          <b>Contact</b>
+        </h1>
+      </div>
     </div>
   )
 }

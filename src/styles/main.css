@@ -19,7 +19,8 @@
 h1 {
     font-size: 4.5em;
     margin: 0;
-    text-align: center;
+    text-align: left;
+    padding-bottom: 5%;
 }
 
 h3 {

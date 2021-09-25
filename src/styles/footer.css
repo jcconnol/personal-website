@@ -1,4 +1,14 @@
+footer {
+    padding-top: 25px;
+}
+
 .footer {
     text-align: center;
     padding: 3px;
+}
+
+.footer-line {
+    color: darkgray;
+    width: 35%;
+    margin: auto;
 }

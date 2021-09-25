@@ -14,6 +14,11 @@ const Header = (props) => {
   /* improvement to use navitems instead of hard coded header */
   return (
     <>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+      </head>
       <nav>
         <div className="header topnav" id="myTopnav">
           {logo}
