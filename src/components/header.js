@@ -1,27 +1,31 @@
 import React from "react"
 import { Link } from 'gatsby'
-import "../styles/header.css" 
+import "../styles/header.css"
 
 const Header = (props) => {
   const pageName = props.pageName;
-
+  
+  var logo = null;
   if(pageName !== "index"){
-    var companyLogo = <Link to="/" class="logo">CompanyLogo</Link>
+    logo = <Link className="left" to="/">JCC</Link>;
+
   }
 
+  /* improvement to use navitems instead of hard coded header */
   return (
-    <div className="header">
+    <>
       <nav>
-        {companyLogo}
-        <div className="header-right">
+        <div className="header topnav" id="myTopnav">
+          {logo}
           <Link to="/about">About</Link>
           <Link to="/experience">Experience</Link>
           <Link to="/work">Work</Link>
           <Link to="/contact">Contact</Link>
-          <a href="/static/resume.pdf">Resume</a>
-          </div>
+          <Link to="/resume">Resume</Link>
+          <Link className="header-icon">&#9776;</Link>
+        </div>
       </nav>
-    </div>
+    </>
   )
 }
 

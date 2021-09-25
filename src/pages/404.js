@@ -1,10 +1,15 @@
 import * as React from "react"
+import "../styles/page.css"
+import Header from "../components/header"
 
 // markup
 const NotFoundPage = () => {
   return (
     <div>
-      page not found
+      <Header />
+      <h1 className="centered">
+        PAGE NOT FOUND
+      </h1>
     </div>
   )
 }
