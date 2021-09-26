@@ -1,3 +1,8 @@
+h1, .page-content p {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
 .center {
     text-align: center;
 }
@@ -5,6 +10,8 @@
 .project-grid {
     display: flex;
 	flex-wrap: wrap;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 @media (min-width: 625px) {
@@ -13,7 +20,7 @@
         box-sizing: border-box;
         background: white;
         color: black;
-        padding: 10px;
+        padding: 2%;
     }
 }
 
@@ -21,8 +28,18 @@
     .project {
         flex: 1 0 100%;
         box-sizing: border-box;
-        background: white;
+        background-color: white;
         color: black;
-        padding: 10px;
+        padding: 2%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .project {
+        flex: 1 0 25%;
+        box-sizing: border-box;
+        background-color: white;
+        color: black;
+        padding: 2%;
     }
 }

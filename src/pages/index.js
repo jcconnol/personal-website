@@ -19,7 +19,7 @@ export default function Index() {
             John Connolly
           </h1>
           <h3>
-            Engineer. Tester. Automator.
+            Engineer. Builder. Tester.
           </h3>
         </div>
       </Main>

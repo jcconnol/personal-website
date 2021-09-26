@@ -2,10 +2,12 @@ import * as React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import GithubProject from "../components/github-project"
+import ProjectData from "../components/projectItems"
 import "../styles/work.css"
 import LeftSidebar from "../components/left-sidebar"
 import RightSidebar from "../components/right-sidebar"
 import Layout from "../components/layout"
+import { MenuItems } from "../components/navItems"
 
 export default function Index() {
   return (
@@ -20,11 +22,20 @@ export default function Index() {
         <div>
           <p><b>What I have built or am currently building</b></p>
           <div className="project-grid">
-            <div className="project"><GithubProject /></div>
-            <div className="project"><GithubProject /></div>
-            <div className="project"><GithubProject /></div>
-            <div className="project"><GithubProject /></div>
-            <div className="project"><GithubProject /></div>
+            {
+              ProjectData.map(item => {
+                return (
+                  <div className="project">
+                    <GithubProject 
+                      title={item.title}
+                      description={item.description}
+                      projectLink={item.projectLink}
+                      githubLink={item.githubLink}
+                    />
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
