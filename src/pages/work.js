@@ -1,6 +1,8 @@
 import * as React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import GithubProject from "../components/github-project"
+import "../styles/work.css"
 import LeftSidebar from "../components/left-sidebar"
 import RightSidebar from "../components/right-sidebar"
 import Layout from "../components/layout"
@@ -16,11 +18,14 @@ export default function Index() {
           <b>Work</b>
         </h1>
         <div>
-          <p><b>This is something that goes on top</b></p>
-          <p>
-            This is something that goes on a page upder the top.
-            This is also under the top but also under whatever us right above this.
-          </p>
+          <p><b>What I have built or am currently building</b></p>
+          <div className="project-grid">
+            <div className="project"><GithubProject /></div>
+            <div className="project"><GithubProject /></div>
+            <div className="project"><GithubProject /></div>
+            <div className="project"><GithubProject /></div>
+            <div className="project"><GithubProject /></div>
+          </div>
         </div>
       </div>
       <Footer />

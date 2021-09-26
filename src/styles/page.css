@@ -13,6 +13,21 @@ body {
     padding-right: 7rem;
 }
 
+@media (max-width: 625px)  {
+    .page-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 625px)  {
+    .page-content {
+        margin-top: 8%;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
 .page-content p {
     padding-bottom: 25px;
 }

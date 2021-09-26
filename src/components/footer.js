@@ -4,19 +4,21 @@ import "../styles/footer.css"
 const Footer = (props) => {
   const pageName = props.pageName;
 
-  if(pageName !== "index"){
-    var footerText = "© John Connolly | 2021"
-  }
-
   return (
     <div>
       <footer>
-        <div className="footer-line">
-          <hr />
-        </div>
-        <div className="footer">
-          {footerText}
-        </div>
+        {
+          pageName !== "index" ?
+            <>
+              <div className="footer-line">
+                <hr />
+              </div>
+              <div className="footer">
+                © John Connolly | 2021
+              </div>
+            </>
+            : null
+        }
       </footer>
     </div>
   )

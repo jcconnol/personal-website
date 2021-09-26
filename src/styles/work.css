@@ -1,0 +1,28 @@
+.center {
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 625px) {
+    .project {
+        flex: 1 0 50%;
+        box-sizing: border-box;
+        background: white;
+        color: black;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 625px) {
+    .project {
+        flex: 1 0 100%;
+        box-sizing: border-box;
+        background: white;
+        color: black;
+        padding: 10px;
+    }
+}

@@ -26,7 +26,7 @@ const Header = (props) => {
           <Link to="/experience">Experience</Link>
           <Link to="/work">Work</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/resume">Resume</Link>
+          <Link to="/resume.pdf">Resume</Link>
           <Link className="header-icon">&#9776;</Link>
         </div>
       </nav>
