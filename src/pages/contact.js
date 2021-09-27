@@ -17,7 +17,7 @@ export default function Index() {
         </h1>
         <div>
           <p>
-            If you wish to get a hold of me for questions about something I built, 
+            If you wish to get a ask me a question about something I have built, 
             you want to ask me to help you with a project or you wish to insult me in an original way
             then you can email me at <a href="mailto:jcconnol4@gmail.com">jcconnol4@gmail.com</a>.
           </p>
