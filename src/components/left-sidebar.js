@@ -1,7 +1,8 @@
 import * as React from "react"
 import "../styles/sidebar.css"
-import GithubIcon from "./github_icon.svg"
-import { StaticImage } from 'gatsby-plugin-image'
+import GithubIcon from "./static/github_icon.svg"
+import LinkedinIcon from "./static/linkedin_icon.svg"
+import FacebookIcon from "./static/facebook_icon.svg"
 
 export default function LeftSidebar() {
   return (
@@ -14,12 +15,12 @@ export default function LeftSidebar() {
         </li>
         <li>
           <a href="https://www.linkedin.com/in/john-connolly-677196157/" target="_blank" rel="noreferrer">
-            <img src={"../../linkedin_icon.svg"} alt="linkedin icon" />
+            <img src={LinkedinIcon} alt="linkedin icon" />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/john.connolly.984/" target="_blank" rel="noreferrer">
-            <StaticImage src={"../../facebook_icon.svg"} alt="facebook icon" />
+            <img src={FacebookIcon} alt="facebook icon" />
           </a>
         </li>
       </ul>

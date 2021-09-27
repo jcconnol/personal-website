@@ -1,3 +1,5 @@
+import Resume from "./static/resume.pdf"
+
 const MenuItems = [
   {
     title: 'About',

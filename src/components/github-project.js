@@ -1,5 +1,7 @@
 import React from "react"
 import "../styles/github-project.css"
+import OpenFolderIcon from "./static/folder_open_icon.svg"
+import GithubIcon from "./static/github_icon.svg"
 
 const GithubProject = (props) => {
     var title = props.title;
@@ -33,14 +35,14 @@ const GithubProject = (props) => {
                     {
                         showProject ?
                         <a href={projectLink}>
-                            <img className="folder-project-image" src="static/folder_open_icon.svg" alt="folder icon" />
+                            <img className="folder-project-image" src={OpenFolderIcon} alt="folder icon" />
                         </a>
                         : null
                     }
                     {
                         showGithub ?
                         <a href={githubLink}>
-                            <img className="github-project-image" src="static/github_icon.svg" alt="github icon" />
+                            <img className="github-project-image" src={GithubIcon} alt="github icon" />
                         </a>
                         : null
                     }
