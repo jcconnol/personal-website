@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby'
 import MobileNav from "../components/mobileNav"
 import MenuItems from "../components/menuItems"
+import Resume from "./static/resume.pdf"
 import "../styles/header.css"
 
 function Header(props) {
@@ -31,7 +32,7 @@ function Header(props) {
               )
             })
           }
-          
+          <a href={Resume}>Resume</a>
           <div className="header-icon" onClick={() => setShowMobileNav(!showMobileNav)}>&#9776;</div>
         </div>
         <div className={showMobileNav ? "mobile-nav" : "hidden" }>

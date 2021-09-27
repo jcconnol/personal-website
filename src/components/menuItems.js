@@ -1,5 +1,3 @@
-import Resume from "./static/resume.pdf"
-
 const MenuItems = [
   {
     title: 'About',
@@ -16,10 +14,6 @@ const MenuItems = [
   {
     title: 'Contact',
     path: '/contact',
-  },
-  {
-    title: 'Resume',
-    path: '/resume.pdf',
   }
 ];
 
