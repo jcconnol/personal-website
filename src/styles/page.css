@@ -26,6 +26,11 @@ body {
         padding-left: 7rem;
         padding-right: 7rem;
     }
+
+    .mobile-nav {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .page-content p {
@@ -34,5 +39,10 @@ body {
 
 h3 {
     margin-bottom: 3rem;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
 

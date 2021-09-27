@@ -22,7 +22,7 @@ export default function Index() {
             then you can email me at <a href="mailto:jcconnol4@gmail.com">jcconnol4@gmail.com</a>.
           </p>
           <p>
-            If the insult is not original then I will probably not respond and just be disappointed in you.
+            If you email me just to be insulting, if the insult is not original then I will probably not respond and just be disappointed in you.
           </p>
         </div>
       </div>

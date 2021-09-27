@@ -3,7 +3,8 @@
   background-color: white;
 }
 
-.topnav a {
+.topnav a,
+.topnav div {
   float: left;
   display: block;
   color: black;
@@ -11,6 +12,11 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .topnav .header-icon {
@@ -52,7 +58,7 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: darkgray;
   color: white;
 }
 
@@ -82,13 +88,11 @@
     display: none;
   }
 
-  .topnav a.header-icon {
+  .topnav div.header-icon {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 625px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .header-icon {
     position: absolute;
@@ -98,7 +102,7 @@
 
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: flex;
     text-align: left;
   }
 
@@ -109,4 +113,5 @@
     width: 100%;
     text-align: left;
   }
+
 }

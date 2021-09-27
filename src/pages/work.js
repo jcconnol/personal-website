@@ -7,7 +7,6 @@ import "../styles/work.css"
 import LeftSidebar from "../components/left-sidebar"
 import RightSidebar from "../components/right-sidebar"
 import Layout from "../components/layout"
-import { MenuItems } from "../components/navItems"
 
 export default function Index() {
   return (

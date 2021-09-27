@@ -1,17 +1,19 @@
-import React from "react"
+import React, { useState } from 'react';
 import { Link } from 'gatsby'
+import MobileNav from "../components/mobileNav"
+import MenuItems from "../components/menuItems"
 import "../styles/header.css"
 
-const Header = (props) => {
-  const pageName = props.pageName;
-  
-  var logo = null;
+function Header(props) {
+
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
+  var pageName = props.pageName;
+  var logoLink = <Link className="hidden" to="/">JCC</Link>;
   if(pageName !== "index"){
-    logo = <Link className="left" to="/">JCC</Link>;
-
+    logoLink = <Link className="left" to="/">JCC</Link>
   }
-
-  /* improvement to use navitems instead of hard coded header */
+  
   return (
     <>
       <head>
@@ -21,13 +23,19 @@ const Header = (props) => {
       </head>
       <nav>
         <div className="header topnav" id="myTopnav">
-          {logo}
-          <Link to="/about">About</Link>
-          <Link to="/experience">Experience</Link>
-          <Link to="/work">Work</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/resume.pdf">Resume</Link>
-          <Link className="header-icon">&#9776;</Link>
+          {logoLink}
+          {
+            MenuItems.map(item => {
+              return (
+                <Link to={item.path} href={item.path}>{item.title}</Link>
+              )
+            })
+          }
+          
+          <div className="header-icon" onClick={() => setShowMobileNav(!showMobileNav)}>&#9776;</div>
+        </div>
+        <div className={showMobileNav ? "mobile-nav" : "hidden" }>
+          <MobileNav />
         </div>
       </nav>
     </>

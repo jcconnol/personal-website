@@ -1,3 +1,8 @@
 .main-inner-container {
     margin-top: 8%;
 }
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}

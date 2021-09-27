@@ -58,3 +58,7 @@ h3 {
 .items-center {
     align-items: center;
 }
+
+.hidden {
+    display: none;
+}
