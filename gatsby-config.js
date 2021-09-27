@@ -21,6 +21,10 @@ module.exports = {
       {
          name:'work',
          link:'/work'
+      },
+      {
+         name:'resume',
+         link:'/resume.pdf'
       }
     ]
   },
