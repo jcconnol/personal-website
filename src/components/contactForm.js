@@ -29,7 +29,7 @@ const ContactForm = (props) => {
 
         let headers = {
             headers: {
-              "x-api-key": process.env.REACT_APP_EMAIL_API_KEY,
+              "x-api-key": process.env.GATSBY_EMAIL_API_KEY,
             }
         }
 
@@ -42,9 +42,9 @@ const ContactForm = (props) => {
         };
         
         console.log(emailConfig);
-        console.log(process.env.REACT_APP_EMAIL_ENDPOINT);
+        console.log(process.env.GATSBY_EMAIL_ENDPOINT);
 
-        await axios.post(process.env.REACT_APP_EMAIL_ENDPOINT, headers, emailConfig)
+        await axios.post(process.env.GATSBY_EMAIL_ENDPOINT, headers, emailConfig)
           .then(res => {
             showError = false;
             showSuccess = true;
