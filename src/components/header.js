@@ -19,7 +19,7 @@ function Header(props) {
     <>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
       </head>
       <nav>
@@ -35,7 +35,7 @@ function Header(props) {
           <a href={Resume}>Resume</a>
           <div className="header-icon" onClick={() => setShowMobileNav(!showMobileNav)}>&#9776;</div>
         </div>
-        <div className={showMobileNav ? "mobile-nav" : "hidden" }>
+        <div className={showMobileNav ? "mobile-nav menu-section" : "hidden menu-section" }>
           <MobileNav />
         </div>
       </nav>

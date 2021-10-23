@@ -37,6 +37,16 @@ export default function Index() {
           </p>
         </div>
         <div>
+          <p><b>Base Commissioner for the Boy Scouts of America Brinton Environmental Center</b></p>
+          <p>
+            Sea Base is comprised of multiple adventures htat scouts can go on. The most common at the Brinton
+            Environmental Center is one called Out Island where scouts paddle 6 miles to a deserted island and 
+            go camping for 3 days and 4 nights. While there the scouts go deep sea fishing and explore the island.
+            As a Base Commissioner I planned logistics for groups going to the island. Ensuring the crews had enough water
+            and gear, handle any medical issues that might arise and manage over 60 people and their individual schedules at a given time
+          </p>
+        </div>
+        <div>
           <p><b>Veterans Association Lab Intern</b></p>
           <p>
             The Veteran's Association in Temple Texas has a research lab that has multiple biological 

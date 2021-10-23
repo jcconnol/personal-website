@@ -4,12 +4,12 @@ import "../styles/mobilenav.css"
 
 export default function MobileNav() {
   return (
-    <div className="overlay">
+    <div className="overlay navigation">
         <div className="overlay-content">
           {
-            MenuItems.map(item => {
+            MenuItems.map((item, index) => {
               return (
-                <a to={item.path} href={item.path}>{item.title}</a>
+                <a to={item.path} href={item.path} key={index}>{item.title}</a>
               )
             })
           }
