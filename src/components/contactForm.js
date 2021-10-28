@@ -33,7 +33,7 @@ const ContactForm = (props) => {
         }
 
         const emailConfig = {
-          emailAdress: formData.email,
+          fromEmail: formData.email,
           name: formData.name,
           message: formData.message
         };
