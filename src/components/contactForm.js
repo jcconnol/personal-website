@@ -25,7 +25,6 @@ const ContactForm = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(formData);
 
         let headers = {
             headers: {
@@ -33,18 +32,13 @@ const ContactForm = (props) => {
             }
         }
 
-        console.log(formData.email);
-
         const emailConfig = {
           emailAdress: formData.email,
           name: formData.name,
           message: formData.message
         };
         
-        console.log(emailConfig);
-        console.log(process.env.GATSBY_EMAIL_ENDPOINT);
-
-        await axios.post(process.env.GATSBY_EMAIL_ENDPOINT, headers, emailConfig)
+        await axios.post(process.env.GATSBY_EMAIL_ENDPOINT, emailConfig, headers)
           .then(res => {
             showError = false;
             showSuccess = true;
