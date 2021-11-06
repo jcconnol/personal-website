@@ -12,8 +12,6 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
       <div className="page-content">
         <h1>
           <b>Work</b>
