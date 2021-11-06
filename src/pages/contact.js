@@ -10,8 +10,6 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
       <div className="page-content">
         <h1>
           <b>Contact</b>
@@ -27,8 +25,8 @@ export default function Index() {
             If you're emailing me just to be insulting, if the insult is not original then I will probably not respond and just be disappointed in you.
           </p>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

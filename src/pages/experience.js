@@ -11,8 +11,6 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
       <div className="page-content">
         <h1>
           <b>Experience</b>
@@ -63,8 +61,8 @@ export default function Index() {
             new cocktail of resucitation drugs is necessary and a better one is almost certainly out there.
           </p>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

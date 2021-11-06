@@ -1,19 +1,19 @@
 const MenuItems = [
   {
     title: 'About',
-    path: '/about',
+    path: '/about/',
   },
   {
     title: 'Experience',
-    path: '/experience',
+    path: '/experience/',
   },
   {
     title: 'Work',
-    path: '/work',
+    path: '/work/',
   },
   {
     title: 'Contact',
-    path: '/contact',
+    path: '/contact/',
   }
 ];
 

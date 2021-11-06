@@ -3,6 +3,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import "../styles/page.css"
+import "../styles/about.css"
 import LeftSidebar from "../components/left-sidebar"
 import RightSidebar from "../components/right-sidebar"
 
@@ -11,8 +12,6 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
       <div className="page-content">
         <h1>
           <b>About</b>
@@ -50,8 +49,8 @@ export default function Index() {
             </li>
           </ul>
         </p>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

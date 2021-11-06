@@ -1,16 +1,18 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import "../styles/test.css"
 import Main from "../components/main"
 import Header from "../components/header"
-import Footer from "../components/footer"
-import "../styles/index.css"
 
-export default function Index() {
+// markup
+const test = () => {
   return (
-    <Layout>
-      <Header pageName="index" />
+    <div>
+        
+      <Header />
       <div class="wave-container">
+
         <div className="inner-wave-content">
+
             <Main>
                 <div className="main-inner-container">
                 <h1>
@@ -21,7 +23,9 @@ export default function Index() {
                 </h3>
                 </div>
             </Main>
+
         </div>
+
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -35,9 +39,12 @@ export default function Index() {
             <use href="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
             </svg>
-          </div>
+            </div>
+
         </div>
-      <Footer pageName="index" />
-    </Layout>
+    </div>
   )
 }
+
+export default test
+
