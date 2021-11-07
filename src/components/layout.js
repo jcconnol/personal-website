@@ -1,8 +1,9 @@
 import React from "react"
 
 export default function Layout({ children }) {
+  //TODO make fade in for things on pages
   return (
-    <div style={{ margin: `0 auto`, padding: `0 1rem` }}>
+    <div>
       {children}
     </div>
   )

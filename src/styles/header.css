@@ -1,10 +1,15 @@
 .topnav {
   overflow: hidden;
   background-color: white;
+  padding: 5px;
+  display:-webkit-flex;
+  list-style-type:none;
+  justify-content:flex-end;
 }
 
 .topnav a,
 .topnav div {
+  border-radius: 5px;
   float: left;
   display: block;
   color: black;
@@ -58,7 +63,7 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: darkgray;
+  background-color: rgba(85,133,179,1);
   color: white;
 }
 
@@ -69,14 +74,6 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.topnav {
-  display:-webkit-flex;
-    display:flex;
-    list-style-type:none;
-    padding:0;
-    justify-content:flex-end;
 }
 
 .left {
@@ -113,5 +110,4 @@
     width: 100%;
     text-align: left;
   }
-
 }

@@ -6,7 +6,7 @@ import Resume from "./static/resume.pdf"
 import "../styles/header.css"
 
 function Header(props) {
-
+  //make rounded edges on header buttons
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   var pageName = props.pageName;

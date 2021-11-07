@@ -44,11 +44,11 @@ li {
         -webkit-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
         text-decoration: none;
-        color: gray;
+        color: black;
     }
 
     .right-vertical-text:hover {
-        color: black;
+        color: rgb(1, 1, 56);
     }
 
     /* Left sidebar CSS */

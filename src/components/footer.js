@@ -1,9 +1,12 @@
 import * as React from "react"
 import "../styles/footer.css"
+import { FaLinkedinIn } from 'react-icons/fa';
+import { BsGithub } from 'react-icons/bs';
+import { CgFacebook } from 'react-icons/cg';
 
 const Footer = (props) => {
   const pageName = props.pageName;
-
+  //TODO footer name and stuff left justify and put linkedin fb and GH on right
   return (
     <div>
       <footer>
@@ -14,7 +17,28 @@ const Footer = (props) => {
                 <hr />
               </div>
               <div className="footer">
-                © John Connolly | 2021
+                  © John Connolly  
+                  
+                  <div className="footer-images-container">
+                    <a className="footer-image" 
+                        href="https://www.linkedin.com/in/john-connolly-677196157/" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <FaLinkedinIn className="" /> 
+                    </a>
+                    <a className="footer-image" 
+                        href="https://github.com/jcconnol" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <BsGithub /> 
+                    </a>
+                    <a className="footer-image" 
+                        href="https://www.facebook.com/john.connolly.984/" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <CgFacebook />
+                    </a>
+                  </div>
               </div>
             </>
             : null

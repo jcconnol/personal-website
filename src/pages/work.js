@@ -12,14 +12,12 @@ export default function Index() {
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
-      <div className="page-content">
+      <div className="page-content work-content">
         <h1>
           <b>Work</b>
         </h1>
         <div>
-          <p><b>What I have built or am currently building</b></p>
+          <p className="center"><b>What I have built or am currently building...</b></p>
           <div className="project-grid">
             {
               ProjectData.map(item => {
@@ -37,8 +35,8 @@ export default function Index() {
             }
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

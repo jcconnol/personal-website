@@ -3,22 +3,18 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import "../styles/experience.css"
-import LeftSidebar from "../components/left-sidebar"
-import RightSidebar from "../components/right-sidebar"
 
 export default function Index() {
   /* improvement is to make map and have info be in json file */
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
-      <div className="page-content">
+      <div className="page-content experience-content">
         <h1>
           <b>Experience</b>
         </h1>
         <div>
-          <p><b>Test engineering at Ramsey Solutions</b></p>
+          <p><b><u>Test engineering at Ramsey Solutions</u></b></p>
           <p>
             I have been working for <a href="https://www.ramseysolutions.com/">Ramsey solutions</a> since 
             July 2021 as a test engineer and QA. I moved to Tenessee from Indiana to work there and absolutely
@@ -27,7 +23,7 @@ export default function Index() {
           </p>
         </div>
         <div>
-          <p><b>Software engineering at Walker Information</b></p>
+          <p><b><u>Software engineering at Walker Information</u></b></p>
           <p>
             <a href="https://walkerinfo.com/">Walker Information</a> is a small customer experience company
             that works closely with Qualtrics. I started working with them in December 2019 and had a lot of fun
@@ -37,7 +33,7 @@ export default function Index() {
           </p>
         </div>
         <div>
-          <p><b>Base Commissioner for the Boy Scouts of America Brinton Environmental Center</b></p>
+          <p><b><u>Base Commissioner for the Boy Scouts of America Brinton Environmental Center</u></b></p>
           <p>
             Sea Base is comprised of multiple adventures htat scouts can go on. The most common at the Brinton
             Environmental Center is one called Out Island where scouts paddle 6 miles to a deserted island and 
@@ -47,7 +43,7 @@ export default function Index() {
           </p>
         </div>
         <div>
-          <p><b>Veterans Association Lab Intern</b></p>
+          <p><b><u>Veterans Association Lab Intern</u></b></p>
           <p>
             The Veteran's Association in Temple Texas has a research lab that has multiple biological 
             rearch studies going on. I was fortunate enough to be able to be an intern and work on a few of
@@ -63,8 +59,8 @@ export default function Index() {
             new cocktail of resucitation drugs is necessary and a better one is almost certainly out there.
           </p>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

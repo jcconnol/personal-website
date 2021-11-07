@@ -3,16 +3,15 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
-import LeftSidebar from "../components/left-sidebar"
-import RightSidebar from "../components/right-sidebar"
+import "../styles/contact.css"
 
 export default function Index() {
+  //TODO make contact form go away after it is submitted
+  //TODO add recaptcha to form
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
-      <div className="page-content">
+      <div className="page-content contact-content">
         <h1>
           <b>Contact</b>
         </h1>
@@ -27,8 +26,8 @@ export default function Index() {
             If you're emailing me just to be insulting, if the insult is not original then I will probably not respond and just be disappointed in you.
           </p>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

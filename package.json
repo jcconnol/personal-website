@@ -22,7 +22,8 @@
     "gatsby-source-filesystem": "^3.14.0",
     "react": "^17.0.1",
     "react-compass": "^0.1.0",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^4.0.0"

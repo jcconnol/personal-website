@@ -3,17 +3,14 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import "../styles/page.css"
-import LeftSidebar from "../components/left-sidebar"
-import RightSidebar from "../components/right-sidebar"
+import "../styles/about.css"
 
 export default function Index() {
   /* improvement is to make map and have info be in json file */
   return (
     <Layout>
       <Header />
-      <LeftSidebar />
-      <RightSidebar />
-      <div className="page-content">
+      <div className="page-content about-content">
         <h1>
           <b>About</b>
         </h1>
@@ -50,8 +47,8 @@ export default function Index() {
             </li>
           </ul>
         </p>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }

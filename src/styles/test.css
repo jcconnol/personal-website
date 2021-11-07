@@ -1,19 +1,9 @@
-.main-inner-container {
-    margin-top: 8%;
-}
-
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-
 .wave-container {
     position:relative;
     text-align:center;
     background: rgb(16,85,149);
     background: linear-gradient(0deg, rgba(16,85,149,1) 0%, rgba(95,141,184,1) 98%, rgba(255,255,255,1) 100%);
     color:white;
-    padding-top: 5%;
 }
   
 .inner-wave-content {
@@ -43,6 +33,7 @@
   
 .content {
     position:relative;
+    height:20vh;
     text-align:center;
 }
   
@@ -88,5 +79,8 @@
     }
     .content {
       height:30vh;
+    }
+    h1 {
+      font-size:24px;
     }
 }
