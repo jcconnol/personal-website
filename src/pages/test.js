@@ -39,8 +39,7 @@ const test = () => {
             <use href="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
             </svg>
-            </div>
-
+          </div>
         </div>
     </div>
   )

@@ -3,14 +3,15 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
-import LeftSidebar from "../components/left-sidebar"
-import RightSidebar from "../components/right-sidebar"
+import "../styles/contact.css"
 
 export default function Index() {
+  //TODO make contact form go away after it is submitted
+  //TODO add recaptcha to form
   return (
     <Layout>
       <Header />
-      <div className="page-content">
+      <div className="page-content contact-content">
         <h1>
           <b>Contact</b>
         </h1>

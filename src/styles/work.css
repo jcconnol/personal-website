@@ -1,6 +1,10 @@
-
 .center {
     text-align: center;
+}
+
+.work-content {
+    color: white;
+    letter-spacing: 1.2px;
 }
 
 .project-grid {

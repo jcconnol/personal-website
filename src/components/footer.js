@@ -17,12 +17,28 @@ const Footer = (props) => {
                 <hr />
               </div>
               <div className="footer">
-                <div className="left">
-                © John Connolly | 2021
-                </div>
-                <div className="right">
-                <FaLinkedinIn /> <BsGithub /> <CgFacebook />
-                </div>
+                  © John Connolly  
+                  
+                  <div className="footer-images-container">
+                    <a className="footer-image" 
+                        href="https://www.linkedin.com/in/john-connolly-677196157/" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <FaLinkedinIn className="" /> 
+                    </a>
+                    <a className="footer-image" 
+                        href="https://github.com/jcconnol" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <BsGithub /> 
+                    </a>
+                    <a className="footer-image" 
+                        href="https://www.facebook.com/john.connolly.984/" 
+                        target="_blank" 
+                        rel="noreferrer">
+                      <CgFacebook />
+                    </a>
+                  </div>
               </div>
             </>
             : null
