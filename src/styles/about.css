@@ -1,10 +1,10 @@
 .page-content {
     margin-top: 0;
     padding-top: 8%;
-    background: linear-gradient(0deg, rgb(31, 71, 109) 0%, rgba(85,133,179,1) 94%, rgba(255,255,255,1) 100%);
+    background: white;
 }
 
 .about-content {
-    color: white;
+    color: black;
     letter-spacing: 1.2px;
 }

@@ -1,17 +1,15 @@
 import * as React from "react"
-import Header from "../components/header"
 import Footer from "../components/footer"
+import Header from "../components/header"
 import GithubProject from "../components/github-project"
 import ProjectData from "../components/projectItems"
 import "../styles/work.css"
-import LeftSidebar from "../components/left-sidebar"
-import RightSidebar from "../components/right-sidebar"
 import Layout from "../components/layout"
 
 export default function Index() {
   return (
     <Layout>
-      <Header />
+      <Header title="work"/>
       <div className="page-content work-content">
         <h1>
           <b>Work</b>

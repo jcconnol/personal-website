@@ -13,7 +13,7 @@ footer {
     justify-content: center;
     text-align: center;
     font-size: large;
-    color: white;
+    color: black;
     padding: 3px;
 }
 
@@ -25,6 +25,6 @@ footer {
 }
 
 .footer-image {
-    color: white;
+    color: black;
     padding: 0 0.5em 0.5em 0.5em;
 }
