@@ -1,5 +1,16 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background:#363C49;
+}
+
 .main-inner-container {
     margin-top: 8%;
+    overflow-y: hidden;
+    color: #FFF;
+    z-index: 2;
 }
 
 .hidden {
@@ -7,86 +18,125 @@
     visibility: hidden;
 }
 
-.wave-container {
-    position:relative;
-    text-align:center;
-    background: rgb(16,85,149);
-    background: linear-gradient(0deg, rgba(16,85,149,1) 0%, rgba(95,141,184,1) 98%, rgba(255,255,255,1) 100%);
-    color:white;
-    padding-top: 5%;
-}
-  
-.inner-wave-content {
-    display: flex;
-    height:47vh;
-    justify-content: center;
-    width:100%;
-    margin: 0;
-    padding: 0;
-}
-  
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-  
-.waves {
-    position:relative;
-    width: 100%;
-    height:15vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    min-height:100px;
-    max-height:150px;
-}
-  
-.content {
-    position:relative;
-    text-align:center;
-}
-  
-/* Animation */
-.parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+.shooting-star-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
+.index-name {
+    /*color: #01a1a7;*/
 }
 
-.parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
+.shooting-star {
+    display:block;
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    background:#FFF;
+    top:10%;
+    left:50%;
+    position:absolute;
+    transform-origin:100% 0;
+    animation: star-ani 25s infinite ease-out;
+    -webkit-animation: star-ani 25s infinite ease-out;
+    -moz-animation:star-ani 25s infinite ease-out;
+    -o-animation:star-ani 25s infinite ease-out;
+    animation-direction: normal;
+    opacity:0;
 }
 
-.parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
+.shooting-star:after {
+    content:'';
+    position:absolute;
+    width:4px;
+    height:4px;
+    border:2px solid #F00;
+    border-width:2px 150px 2px 150px; 
+    border-color:transparent transparent transparent #FFF;
+    transform:rotate(-45deg) translate(1px, -1px);
+    transform-origin:0% 100%;
+    animation:shooting-ani 25s infinite  ease-out;
+    -webkit-animation: shooting-ani 25s infinite ease-out;
+    -moz-animation:shooting-ani 25s infinite ease-out;
+    -o-animation:shooting-ani 25s infinite ease-out;
+    animation-direction: normal;
 }
 
-.parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-}
-
-@keyframes move-forever {
+@keyframes shooting-ani {
     0% {
-     transform: translate3d(-90px,0,0);
+        left:100%; top:0%;
     }
-    100% { 
-      transform: translate3d(85px,0,0);
+    5% {
+        
+      transform:scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+    100% {
+        
+        transform:scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+}
+  
+@keyframes star-ani {
+    0% {
+      opacity:1;
+      transform:scale(0) rotate(0) translate(0, 0);
+    }
+    5% {
+        opacity:0;
+        transform:scale(1) rotate(0) translate(-1000px, 1000px);
+    }
+    100% {
+      opacity:0;
+      transform:scale(1) rotate(0) translate(-1000px, 1000px);
     }
 }
 
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-    .waves {
-      height:40px;
-      min-height:40px;
-    }
-    .content {
-      height:30vh;
-    }
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+.stars, .twinkling {
+    position:absolute;
+    top:10%;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:90%;
+    display:block;
+  }
+  
+  .stars {
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index:0;
+  }
+  
+  .twinkling{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index:1;
+  
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+  }

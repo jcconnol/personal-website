@@ -3,30 +3,51 @@ require("dotenv").config({
 })
 
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Default Starter',
+   siteMetadata: {
+    title: 'John Connolly - Engineer, Builder, Tester',
+    description: 'A blog and portfolio of John Connolly, a software engineer and QA based out of Nashville, TN.',
     menuLinks:[
       {
          name:'index',
          link:'/'
       },
       {
-         name:'about',
+         name:'About',
          link:'/about'
       },
       {
-         name:'contact',
+         name:'Contact',
          link:'/contact'
       },
       {
-         name:'experience',
+         name:'Experience',
          link:'/experience'
       },
       {
-         name:'work',
+         name:'Work',
          link:'/work'
+      },
+      {
+         name:'Blog',
+         link:'/blog'
       }
     ]
   },
-  plugins: []
+  plugins: [
+      `gatsby-transformer-remark`,
+      {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+           name: `images`,
+           path: `${__dirname}/src/images/`,
+         },
+       },
+       {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+           name: `blog`,
+           path: `${__dirname}/src/blog/`,
+         },
+       },
+   ]
 }

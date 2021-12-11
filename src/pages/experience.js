@@ -1,5 +1,4 @@
 import * as React from "react"
-import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import "../styles/experience.css"
@@ -8,7 +7,6 @@ export default function Index() {
   /* improvement is to make map and have info be in json file */
   return (
     <Layout>
-      <Header />
       <div className="page-content experience-content">
         <h1>
           <b>Experience</b>
