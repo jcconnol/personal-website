@@ -10,17 +10,17 @@ export default function Blog({ data }) {
       <Header />
       <h1>My blog posts</h1>
 
-      {posts.map(post => (
+      {/*posts.map(post => (
         <article key={post.id}>
           <h2>{post.frontmatter.title}</h2>
           <small>{post.frontmatter.author}, {post.frontmatter.date}</small>
           <p>{post.excerpt}</p>
         </article>
-      ))}
+      ))*/}
     </div>
   )
 }
-
+/*
 export const pageQuery = graphql`
   query MyQuery {
     blog: allMarkdownRemark {
@@ -35,4 +35,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`*/
