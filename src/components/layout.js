@@ -6,7 +6,6 @@ export default function Layout({ children }) {
   //TODO make fade in for things on pages
   return (
     <div>
-      <Header menuItems={menuItems} />
       {children}
     </div>
   )

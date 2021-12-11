@@ -1,13 +1,13 @@
 import React from "react"
+import Header from "../components/header"
 import { graphql } from "gatsby"
-import Header from '../components/header'
 
 export default function Blog({ data }) {
   const { posts } = data.blog
 
   return (
     <div>
-      <Header />
+      <Header title="blog"/>
       <h1>My blog posts</h1>
 
       {/*posts.map(post => (

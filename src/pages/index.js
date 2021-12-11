@@ -1,11 +1,13 @@
 import React from "react";
 import Layout from "../components/layout"
 import Main from "../components/main"
+import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/index.css"
 
 //TODO put footer inside layout.js
 //TODO change colors of mobile header and make text bold
+//TODO change left header JCC text to icon image - with hover inverse colors
 export default function Index() {
   var SHOOTING_STAR_MAX_NUMBER = 15;
 
@@ -25,6 +27,7 @@ export default function Index() {
   
   return (
     <Layout>
+      <Header title="index"/>
       <div>
         <div>
             <div className="stars"></div>

@@ -2,6 +2,7 @@ import * as React from "react"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
+import Header from "../components/header"
 import "../styles/contact.css"
 
 export default function Index() {
@@ -9,6 +10,7 @@ export default function Index() {
   //TODO add recaptcha to form
   return (
     <Layout>
+      <Header title="contact"/>
       <div className="page-content contact-content">
         <h1>
           <b>Contact</b>
