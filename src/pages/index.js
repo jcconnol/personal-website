@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Main from "../components/main"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 import "../styles/index.css"
 
 //TODO put footer inside layout.js
@@ -29,6 +30,9 @@ export default function Index() {
     <Layout>
       <Header title="index"/>
       <div>
+        <Seo
+          description={"Main page for the personal website of John Connolly."}
+        />
         <div>
             <div className="stars"></div>
             <div className="twinkling"></div>

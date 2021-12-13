@@ -33,7 +33,7 @@ export default function Header(props) {
   for(var i = 0; i < 9; i++){
     buttonStyles.push({ color: textColor, backgroundColor: backgroundColor});
   }
-  console.log(hovered);
+
   if(hovered){
     if(buttonStyles[hovered].backgroundColor == "black"){
       buttonStyles[hovered].backgroundColor = "white"

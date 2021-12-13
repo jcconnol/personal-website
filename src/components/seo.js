@@ -28,7 +28,7 @@
    )
  
    const metaDescription = description || site.siteMetadata.description
-   const defaultTitle = site.siteMetadata?.title
+   const defaultTitle = site.siteMetadata.title
  
    return (
      <Helmet
@@ -36,7 +36,7 @@
          lang,
        }}
        title={title}
-       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : `Whatever`}
        meta={[
          {
            name: `description`,
