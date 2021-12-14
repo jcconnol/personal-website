@@ -5,12 +5,17 @@ import GithubProject from "../components/github-project"
 import ProjectData from "../components/projectItems"
 import "../styles/work.css"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 export default function Index() {
   return (
     <Layout>
       <Header title="work"/>
       <div className="page-content work-content">
+        <Seo
+          title={"Work"}
+          description={"Main page for the personal website of John Connolly."}
+        />
         <h1>
           <b>Work</b>
         </h1>

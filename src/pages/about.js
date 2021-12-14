@@ -2,6 +2,7 @@ import * as React from "react"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import "../styles/page.css"
 import "../styles/about.css"
 
@@ -11,6 +12,10 @@ export default function Index() {
     <Layout>
       <Header title={"about"}/>
       <div className="page-content about-content">
+        <Seo
+          title={"About"}
+          description={"About page for John Connolly. A tale about my life's story and work history."}
+        />
         <h1>
           <b>About</b>
         </h1>

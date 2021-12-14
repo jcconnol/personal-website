@@ -2,6 +2,7 @@ import * as React from "react"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
+import Seo from "../components/seo"
 import Header from "../components/header"
 import "../styles/contact.css"
 
@@ -12,6 +13,10 @@ export default function Index() {
     <Layout>
       <Header title="contact"/>
       <div className="page-content contact-content">
+        <Seo
+          title={"Contact"}
+          description={"Contact page for John Connolly. Feel free to message me through social media or fill out the form below."}
+        />
         <h1>
           <b>Contact</b>
         </h1>
