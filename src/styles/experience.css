@@ -12,15 +12,14 @@
 
 .page-content {
     margin-top: 0;
-    background: linear-gradient(0deg, rgb(23, 53, 82) 0%, rgba(85,133,179,1) 94%, rgba(255,255,255,1) 100%);
+    background: white;
 }
 
 .experience-content {
-    color: white;
+    color: black;
     letter-spacing: 1.2px;
 }
 
 .experience-content a {
-    color: rgb(154, 208, 255);
     letter-spacing: 1.2px;
 }

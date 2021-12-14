@@ -1,16 +1,21 @@
 import * as React from "react"
-import Header from "../components/header"
 import Footer from "../components/footer"
+import Header from "../components/header"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import "../styles/page.css"
 import "../styles/about.css"
 
 export default function Index() {
-  /* improvement is to make map and have info be in json file */
+  /* TODO improvement is to make map and have info be in json file */
   return (
     <Layout>
-      <Header />
+      <Header title={"about"}/>
       <div className="page-content about-content">
+        <Seo
+          title={"About"}
+          description={"About page for John Connolly. A tale about my life's story and work history."}
+        />
         <h1>
           <b>About</b>
         </h1>
