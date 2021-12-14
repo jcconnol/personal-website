@@ -10,7 +10,7 @@ module.exports = {
          summary: 'Engineer, Builder, Tester based out of Nashville, TN.'
       },
       description: 'A blog and portfolio of John Connolly, a software engineer and QA based out of Nashville, TN.',
-      siteUrl: `https://johnconnolly.gatsbyjs.io/`,
+      siteUrl: `https://johnconnolly.gatsbyjs.io`,
       social: {
          twitter: `johnconnolly`,
       },
@@ -77,65 +77,16 @@ module.exports = {
              icon: `src/images/logo.png`
           }
        },
+       {
+        resolve: 'gatsby-plugin-robots-txt',
+        options: {
+          host: 'https://johnconnolly.gatsbyjs.io',
+          sitemap: 'https://johnconnolly.gatsbyjs.io/sitemap.xml',
+          policy: [{ userAgent: '*', allow: '/' }]
+        }
+      },
        `gatsby-plugin-catch-links`,
-       `gatsby-plugin-react-helmet`
+       `gatsby-plugin-react-helmet`,
+       `gatsby-plugin-sitemap`
    ]
 }
-
-
-
-/*
-{
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
-          },
-        ],
-      },
-    },
-   */

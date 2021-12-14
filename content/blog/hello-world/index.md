@@ -1,231 +1,78 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: Hello World!
+date: "2021-12-13T22:12:03.284Z"
+description: "Ever used a new langauge and started with a 'Hello World!' output? Find out its origin and a couple uses for it."
 ---
 
-This is my first post on my new fake blog! How exciting!
+Known by 100% of all software engineers and coders, "Hello World!" is typically what is implemented to show the first sign of life after successfully implementing or installing a new computer program.
 
-I'm sure I'll write a lot more interesting things in the future.
+So in the spirit of this being my first blog post, it is only natural to start with "Hello World!"
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+## History ##
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book, A Tutorial Introduction to the Language B. In this book the phrase "hi!" is output, because a character constant is limited to 4 ASCII characters. This phrase was later written in [C](https://www.cprogramming.com/) and lengthed to the full "Hello World!" in 1974 by a [Bell Labs](https://www.belllabs.com/) internal memo. After being formally published in the 1978 book _The C Programming Language_, and since then programmers from all over have used it to confirm that their source code, compiler (or JVM, etc.) and configuration are all correct. 
 
-![Chinese Salty Egg](./salty_egg.jpg)
+## Implementation ##
 
-You can also write code blocks here!
+"Hello World!" can be output with any programming language which means that implementations of "Hello World!" can vary greatly. The differences for prevalent programming languages can vary in length and complexity. Take the _Assembly_ example below:
+
+```assembly
+        global _main
+        extern  _GetStdHandle@4
+        extern  _WriteFile@20
+        extern  _ExitProcess@4
+
+        section .text
+    _main:
+        ; DWORD  bytes;    
+        mov     ebp, esp
+        sub     esp, 4
+
+        ; hStdOut = GetstdHandle( STD_OUTPUT_HANDLE)
+        push    -11
+        call    _GetStdHandle@4
+        mov     ebx, eax    
+
+        ; WriteFile( hstdOut, message, length(message), &bytes, 0);
+        push    0
+        lea     eax, [ebp-4]
+        push    eax
+        push    (message_end - message)
+        push    message
+        push    ebx
+        call    _WriteFile@20
+
+        ; ExitProcess(0)
+        push    0
+        call    _ExitProcess@4
+
+        ; never here
+        hlt
+    message:
+        db      'Hello, World', 10
+    message_end:
+```
+
+
+Considered a very low level programming language, meaning being closer to being written in 1's and 0's, these 17 lines of Assembly code can be compiled on a Windows machine to output "Hello World!".
+
+On the opposite side of the spectrum, JavaScript is a modern programming language with a lot of modern functionality such as console logging. This allows someone to output "Hello World!" with just a single line:
 
 ```js
-const saltyDuckEgg = "chinese preserved food product"
+    console.log("Hello World");
 ```
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
+This makes modern development and therefore implementation of simple outputs such as "Hello World!" a much simpler task. 
 
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
+With the perks of modern life though, come people that just like to watch the world burn. So there are also another breed of programming languages that are just made to be difficult. Take [Brainf***](https://en.wikipedia.org/wiki/Brainfuck) for example. The following is an implementation of "Hello World!":
 
-This is a paragraph.
-
-    This is a paragraph.
-
-# Header 1
-
-## Header 2
-
-    Header 1
-    ========
-
-    Header 2
-    --------
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
-
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> ## This is a header.
->
-> 1. This is the first list item.
-> 2. This is the second list item.
->
-> Here's some example code:
->
->     Markdown.generate();
-
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
-
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-
-```markdown
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
+```brainfuck
+    --<-<<+[+[<+>--->->->-<<<]>]<<--.<++++++.<<-..<<.<+.>>.>>.<<<.+++.>>.>>-.<<<+.
 ```
 
-- `code goes` here in this line
-- **bold** goes here
+Although Brainf*** is not a widely used programming language (and definitely not a serious one), it shows that even when people are just messing around, "Hello World!" is still as prevalent as ever. Those simple words could be the start of a new and exciting use of a programming language OR the start of many hours of frustration and combing through Stackoverflow.
 
-```markdown
-- `code goes` here in this line
-- **bold** goes here
-```
 
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
+## Conclusion ##
 
-```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
-```
-
-1. `code goes` here in this line
-1. **bold** goes here
-
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
-```
-
-Paragraph:
-
-    Code
-
-<!-- -->
-
-    Paragraph:
-
-        Code
-
----
-
----
-
----
-
----
-
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+In the end, "Hello World!" is a very prevalent and relavent tradition in the world of programming and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.

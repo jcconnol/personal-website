@@ -28,15 +28,15 @@
    )
  
    const metaDescription = description || site.siteMetadata.description
-   const defaultTitle = site.siteMetadata.title
- 
+   const defaultTitle = site.siteMetadata?.title
+
    return (
      <Helmet
        htmlAttributes={{
          lang,
        }}
        title={title}
-       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : `Whatever`}
+       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
        meta={[
          {
            name: `description`,

@@ -31,6 +31,7 @@ export default function Index() {
       <Header title="index"/>
       <div>
         <Seo
+          title={"JCC"}
           description={"Main page for the personal website of John Connolly."}
         />
         <div>
