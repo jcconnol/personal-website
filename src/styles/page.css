@@ -9,16 +9,16 @@ body {
 
 @media (max-width: 625px)  {
     .page-content {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
 @media (min-width: 625px)  {
     .page-content {
         margin-top: 8%;
-        padding-left: 10.5rem;
-        padding-right: 10.5rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
     }
 
     .mobile-nav {
