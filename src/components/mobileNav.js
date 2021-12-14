@@ -1,16 +1,15 @@
 import React from "react"
-import { Link } from 'gatsby';
+import MenuItems from "../components/menuItems"
 import "../styles/mobilenav.css"
 
-export default function MobileNav({ menuItems }) {
-  
+export default function MobileNav() {
   return (
     <div className="overlay navigation">
         <div className="overlay-content">
           {
-            menuItems.map((item, index) => {
+            MenuItems.map((item, index) => {
               return (
-                <Link to={item.path} href={item.path} key={index}>{item.name}</Link>
+                <a to={item.path} href={item.path} key={index}>{item.title}</a>
               )
             })
           }

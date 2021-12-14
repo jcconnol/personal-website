@@ -1,9 +1,8 @@
 import * as React from "react"
+import Header from "../components/header"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
-import Seo from "../components/seo"
-import Header from "../components/header"
 import "../styles/contact.css"
 
 export default function Index() {
@@ -11,12 +10,8 @@ export default function Index() {
   //TODO add recaptcha to form
   return (
     <Layout>
-      <Header title="contact"/>
+      <Header />
       <div className="page-content contact-content">
-        <Seo
-          title={"Contact"}
-          description={"Contact page for John Connolly. Feel free to message me through social media or fill out the form below."}
-        />
         <h1>
           <b>Contact</b>
         </h1>
@@ -27,6 +22,9 @@ export default function Index() {
             then please contact me with the form below.
           </p>
           <ContactForm />
+          <p>
+            If you're emailing me just to be insulting, if the insult is not original then I will probably not respond and just be disappointed in you.
+          </p>
         </div>
         <Footer />
       </div>
