@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 date: "2021-12-13T22:12:03.284Z"
-description: "Ever used a new language and started with a 'Hello World!' output? Find out its origin and a couple uses for it."
+description: "Ever used a new langauge and started with a 'Hello World!' output? Find out its origin and a couple uses for it."
 ---
 
 Known by 100% of all software engineers and coders, "Hello World!" is typically what is implemented to show the first sign of life after successfully implementing or installing a new computer program.
@@ -10,7 +10,7 @@ So in the spirit of this being my first blog post, it is only natural to start w
 
 ## History ##
 
-The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book, A Tutorial Introduction to the Language B. In this book the phrase "hi!" is output, because a character constant is limited to 4 ASCII characters. This phrase was later written in [C](https://www.cprogramming.com/) and lengthened to the full "Hello World!" in 1974 by a [Bell Labs](https://www.belllabs.com/) internal memo. After being formally published in the 1978 book _The C Programming Language_, and since then programmers from all over have used it to confirm that their source code, compiler (or JVM, etc.) and configuration are all correct. 
+The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book, A Tutorial Introduction to the Language B. In this book the phrase "hi!" is output, because a character constant is limited to 4 ASCII characters. This phrase was later written in [C](https://www.cprogramming.com/) and lengthed to the full "Hello World!" in 1974 by a [Bell Labs](https://www.belllabs.com/) internal memo. After being formally published in the 1978 book _The C Programming Language_, and since then programmers from all over have used it to confirm that their source code, compiler (or JVM, etc.) and configuration are all correct. 
 
 ## Implementation ##
 
@@ -75,9 +75,9 @@ With the perks of modern life though, come people that just like to watch the wo
 <<--.<++++++.<<-..<<.<+.>>.>>.<<<.+++.>>.>>-.<<<+.
 ```
 
-Although Brainf*** is not a widely used programming language (and definitely not a serious one), it shows that even when people are just messing around, "Hello World!" is still as prevalent as ever. Those simple words could be the start of a new and exciting use of a programming language OR the start of many hours of frustration and combing through StackOverflow.
+Although Brainf*** is not a widely used programming language (and definitely not a serious one), it shows that even when people are just messing around, "Hello World!" is still as prevalent as ever. Those simple words could be the start of a new and exciting use of a programming language OR the start of many hours of frustration and combing through Stackoverflow.
 
 
 ## Conclusion ##
 
-In the end, "Hello World!" is a very prevalent and relevant tradition in the world of programming and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.
+In the end, "Hello World!" is a very prevalent and relavent tradition in the world of programming and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.
