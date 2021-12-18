@@ -40,9 +40,32 @@ module.exports = {
             link:'/blog'
          }
       ]
-  },
-  plugins: [
-      `gatsby-transformer-remark`,
+   },
+   plugins: [
+      {
+         resolve: `gatsby-transformer-remark`,
+         options: {
+            plugins: [
+               /*
+               //really good except weird header on the top of the boxes that I cannot geet rid of
+               {
+                  resolve: `gatsby-remark-highlight-code`,
+                  options: {
+                     terminal: "carbon",
+                     theme: "dracula",
+                     editable: false,
+                     lineNumbers: true
+                  },
+               },*/
+               {
+                  resolve: `gatsby-remark-vscode`,
+                  options: {
+                    theme: "Monokai" //good
+                  }
+               }
+            ],
+         },
+      },
       `gatsby-plugin-less`,
       {
          resolve: `gatsby-source-filesystem`,

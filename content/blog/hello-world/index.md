@@ -16,41 +16,41 @@ The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book,
 
 "Hello World!" can be output with any programming language which means that implementations of "Hello World!" can vary greatly. The differences for prevalent programming languages can vary in length and complexity. Take the _Assembly_ example below:
 
-```assembly
-        global _main
-        extern  _GetStdHandle@4
-        extern  _WriteFile@20
-        extern  _ExitProcess@4
+```vim
+    global _main
+    extern  _GetStdHandle@4
+    extern  _WriteFile@20
+    extern  _ExitProcess@4
 
-        section .text
-    _main:
-        ; DWORD  bytes;    
-        mov     ebp, esp
-        sub     esp, 4
+    section .text
+_main:
+    ; DWORD  bytes;    
+    mov     ebp, esp
+    sub     esp, 4
 
-        ; hStdOut = GetstdHandle( STD_OUTPUT_HANDLE)
-        push    -11
-        call    _GetStdHandle@4
-        mov     ebx, eax    
+    ; hStdOut = GetstdHandle( STD_OUTPUT_HANDLE)
+    push    -11
+    call    _GetStdHandle@4
+    mov     ebx, eax    
 
-        ; WriteFile( hstdOut, message, length(message), &bytes, 0);
-        push    0
-        lea     eax, [ebp-4]
-        push    eax
-        push    (message_end - message)
-        push    message
-        push    ebx
-        call    _WriteFile@20
+    ; WriteFile( hstdOut, message, length(message), &bytes, 0);
+    push    0
+    lea     eax, [ebp-4]
+    push    eax
+    push    (message_end - message)
+    push    message
+    push    ebx
+    call    _WriteFile@20
 
-        ; ExitProcess(0)
-        push    0
-        call    _ExitProcess@4
+    ; ExitProcess(0)
+    push    0
+    call    _ExitProcess@4
 
-        ; never here
-        hlt
-    message:
-        db      'Hello, World', 10
-    message_end:
+    ; never here
+    hlt
+message:
+    db      'Hello, World', 10
+message_end:
 ```
 
 
@@ -59,15 +59,20 @@ Considered a very low level programming language, meaning being closer to being 
 On the opposite side of the spectrum, JavaScript is a modern programming language with a lot of modern functionality such as console logging. This allows someone to output "Hello World!" with just a single line:
 
 ```js
-    console.log("Hello World");
+console.log("Hello World");
 ```
 
 This makes modern development and therefore implementation of simple outputs such as "Hello World!" a much simpler task. 
 
 With the perks of modern life though, come people that just like to watch the world burn. So there are also another breed of programming languages that are just made to be difficult. Take [Brainf***](https://en.wikipedia.org/wiki/Brainfuck) for example. The following is an implementation of "Hello World!":
 
-```brainfuck
-    --<-<<+[+[<+>--->->->-<<<]>]<<--.<++++++.<<-..<<.<+.>>.>>.<<<.+++.>>.>>-.<<<+.
+```brainfuck 
+--<-<<+[
+    +[
+        <+>--->->->-<<<
+    ]>
+]
+<<--.<++++++.<<-..<<.<+.>>.>>.<<<.+++.>>.>>-.<<<+.
 ```
 
 Although Brainf*** is not a widely used programming language (and definitely not a serious one), it shows that even when people are just messing around, "Hello World!" is still as prevalent as ever. Those simple words could be the start of a new and exciting use of a programming language OR the start of many hours of frustration and combing through Stackoverflow.

@@ -6,7 +6,7 @@ import { CgFacebook } from 'react-icons/cg';
 
 const Footer = (props) => {
   const pageName = props.pageName;
-  //TODO footer name and stuff left justify and put linkedin fb and GH on right
+
   return (
     <div>
       <footer>

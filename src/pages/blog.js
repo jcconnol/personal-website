@@ -9,7 +9,6 @@ import "../styles/blog.css"
 
 const Blog = ({ data, location }) => {
 
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {

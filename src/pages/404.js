@@ -8,8 +8,8 @@ import Puppy from "../components/static/puppy.png"
 
 const NotFoundPage = () => {
   //TODO change dog photo to picture of cat on throne
-
   const [imageType, setImage] = useState("1");
+  
   console.log(imageType)
   return (
     <Layout>
@@ -47,6 +47,7 @@ const NotFoundPage = () => {
             paddingBottom: "5%"
           }}
             src={(imageType ? Kitten : Puppy)}
+            alt={(imageType ? "adorable kitten" : "cute puppy")}
           />
         </div>
         <div className="center" style={{

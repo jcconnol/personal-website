@@ -6,7 +6,7 @@
     z-index: 5;
     top: 9%;
     left: 0;
-    background-color: #edeeee;
+    background-color: #d9dada;
     overflow-y: hidden;
     transition: 0.5s;
   }
@@ -26,10 +26,11 @@
     color: black;
     display: block;
     transition: 0.3s;
+    font-weight: 700; 
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #a5a5a5;
   }
   
   .overlay .closebtn {
