@@ -1,24 +1,20 @@
-const menuItems = [
+const MenuItems = [
   {
-    name: 'About',
-    path: '/about',
+    title: 'About',
+    path: '/about/',
   },
   {
-    name: 'Experience',
-    path: '/experience',
+    title: 'Experience',
+    path: '/experience/',
   },
   {
-    name: 'Work',
-    path: '/work',
+    title: 'Work',
+    path: '/work/',
   },
   {
-    name: 'Contact',
-    path: '/contact',
-  },
-  {
-    name: 'Blog',
-    path: '/blog',
+    title: 'Contact',
+    path: '/contact/',
   }
 ];
 
-export default menuItems;
+export default MenuItems;

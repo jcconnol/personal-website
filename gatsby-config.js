@@ -3,17 +3,18 @@ require("dotenv").config({
 })
 
 module.exports = {
-   siteMetadata: {
-      title: 'John Connolly - Engineer, Builder, Tester',
-      author: {
-         name: 'John Connolly',
-         summary: 'Engineer, Builder, Tester based out of Nashville, TN.'
+  siteMetadata: {
+    title: 'Gatsby Default Starter',
+    menuLinks:[
+      {
+         name:'index',
+         link:'/'
       },
-      description: 'A blog and portfolio of John Connolly, a software engineer and QA based out of Nashville, TN.',
-      siteUrl: `https://johnconnolly.gatsbyjs.io`,
-      social: {
-         twitter: `johnconnolly`,
+      {
+         name:'about',
+         link:'/about'
       },
+<<<<<<< HEAD
       menuLinks:[
          {
             name:'index',
@@ -112,4 +113,21 @@ module.exports = {
        `gatsby-plugin-react-helmet`,
        `gatsby-plugin-sitemap`
    ]
+=======
+      {
+         name:'contact',
+         link:'/contact'
+      },
+      {
+         name:'experience',
+         link:'/experience'
+      },
+      {
+         name:'work',
+         link:'/work'
+      }
+    ]
+  },
+  plugins: []
+>>>>>>> 4a7d173dde76fcd61c4e462ad359b58de1ea0738
 }
