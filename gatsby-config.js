@@ -3,8 +3,17 @@ require("dotenv").config({
 })
 
 module.exports = {
-  siteMetadata: {
-      title: 'Gatsby Default Starter',
+   siteMetadata: {
+      title: 'John Connolly - Engineer, Builder, Tester',
+      author: {
+         name: 'John Connolly',
+         summary: 'Engineer, Builder, Tester based out of Nashville, TN.'
+      },
+      description: 'A blog and portfolio of John Connolly, a software engineer and QA based out of Nashville, TN.',
+      siteUrl: `https://johnconnolly.gatsbyjs.io`,
+      social: {
+         twitter: `johnconnolly`,
+      },
       menuLinks:[
          {
             name:'index',
@@ -38,7 +47,7 @@ module.exports = {
          options: {
             plugins: [
                /*
-               //really good except weird header on the top of the boxes that I cannot get rid of
+               //really good except weird header on the top of the boxes that I cannot geet rid of
                {
                   resolve: `gatsby-remark-highlight-code`,
                   options: {

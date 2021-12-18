@@ -1,10 +1,10 @@
 
 .overlay {
-    height: 90%;
+    height: 91%;
     width: 100%;
     position: fixed;
-    z-index: 1;
-    top: 10%;
+    z-index: 5;
+    top: 9%;
     left: 0;
     background-color: #d9dada;
     overflow-y: hidden;
