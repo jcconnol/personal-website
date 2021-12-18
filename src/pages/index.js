@@ -1,67 +1,44 @@
-import React from "react";
+import * as React from "react"
 import Layout from "../components/layout"
 import Main from "../components/main"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Seo from "../components/seo"
 import "../styles/index.css"
 
 //TODO change left header JCC text to icon image - with hover inverse colors
 //TODO add github squares at the bottom of the index page
 export default function Index() {
-  var SHOOTING_STAR_MAX_NUMBER = 15;
-
-  var shootingStarObject = [];
-
-  for(var i = 0; i < SHOOTING_STAR_MAX_NUMBER; i++){
-    var starTop =  Math.ceil(Math.random() * (20)) + "%";
-    var starLeft =  Math.ceil(10 + (Math.random() * (90))) + "%";
-    var starDelay =  Math.ceil(Math.random() * (25)) + "s";
-
-    shootingStarObject.push({
-      top: starTop,
-      left:starLeft,
-      delay: starDelay
-    });
-  }
-  
   return (
     <Layout>
-      <Header title="index"/>
-      <div>
-        <Seo
-          title={"JCC"}
-          description={"Main page for the personal website of John Connolly."}
-        />
+      <Header pageName="index" />
+      <div class="wave-container">
+        <div className="inner-wave-content">
+            <Main>
+                <div className="main-inner-container">
+                <h1>
+                    John Connolly
+                </h1>
+                <h3>
+                    Engineer. Builder. Tester.
+                </h3>
+                </div>
+            </Main>
+        </div>
         <div>
-            <div className="stars"></div>
-            <div className="twinkling"></div>
-            <div className="shooting-star-container">
-              {
-                shootingStarObject.map(element => (
-                  <span 
-                    className="shooting-star"
-                    style={{
-                      top: element.top,
-                      left: element.left,
-                      animationDelay: element.delay
-                    }}
-                  ></span>
-                ))
-              }
-            </div>
-          <Main>
-              <div className="main-inner-container">
-              <h1>
-                  <span className="index-name">John Connolly</span>
-              </h1>
-              <h3>
-                  Engineer. Builder. Tester.
-              </h3>
-              </div>
-          </Main>
-        </div>  
-      </div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+          </div>
+        </div>
       <Footer pageName="index" />
     </Layout>
   )

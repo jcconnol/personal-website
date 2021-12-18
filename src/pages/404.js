@@ -1,22 +1,19 @@
-import React, { useState } from "react"
-import Layout from '../components/layout'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import * as React from "react"
 import "../styles/page.css"
-import Kitten from "../components/static/kitten.png"
-import Puppy from "../components/static/puppy.png"
+import Header from "../components/header"
 
+// markup
 const NotFoundPage = () => {
   //TODO change dog photo to picture of cat on throne
   const [imageType, setImage] = useState("1");
   
   console.log(imageType)
   return (
-    <Layout>
-      <Header title="404" />
+    <div>
+      <Header />
       <div className="page-content">
         <h1>
-          <b>404 page not found!</b>
+          <b>Contact</b>
         </h1>
         <p style={{
           textAlign: "center",
@@ -57,7 +54,7 @@ const NotFoundPage = () => {
         </div>
         <Footer />
       </div>
-    </Layout>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ const test = () => {
     <div>
         
       <Header />
-      <div className="wave-container">
+      <div class="wave-container">
 
         <div className="inner-wave-content">
 
