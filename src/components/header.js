@@ -35,7 +35,7 @@ export default function Header(props) {
   }
 
   if(hovered){
-    if(buttonStyles[hovered].backgroundColor == "black"){
+    if(buttonStyles[hovered].backgroundColor === "black"){
       buttonStyles[hovered].backgroundColor = "white"
       buttonStyles[hovered].color = "black"
     }

@@ -6,9 +6,8 @@ import Footer from "../components/footer"
 import Seo from "../components/seo"
 import "../styles/index.css"
 
-//TODO put footer inside layout.js
-//TODO change colors of mobile header and make text bold
 //TODO change left header JCC text to icon image - with hover inverse colors
+//TODO add github squares at the bottom of the index page
 export default function Index() {
   var SHOOTING_STAR_MAX_NUMBER = 15;
 

@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+//import { defineCustomElements as deckDeckGoElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,10 +8,17 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/blog.css"
 
+//deckDeckGoElement();
+
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const { previous, next } = data;
+
+
+
+  //TODO add stlye to element
 
   return (
     <Layout location={location} title={siteTitle}>
