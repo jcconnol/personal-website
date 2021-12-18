@@ -17,13 +17,8 @@ body {
 @media (min-width: 625px)  {
     .page-content {
         margin-top: 8%;
-<<<<<<< HEAD
         padding-left: 12.5rem;
         padding-right: 12.5rem;
-=======
-        padding-left: 7rem;
-        padding-right: 7rem;
->>>>>>> 4a7d173dde76fcd61c4e462ad359b58de1ea0738
     }
 
     .mobile-nav {

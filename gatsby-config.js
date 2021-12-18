@@ -14,7 +14,6 @@ module.exports = {
          name:'about',
          link:'/about'
       },
-<<<<<<< HEAD
       menuLinks:[
          {
             name:'index',
@@ -113,21 +112,4 @@ module.exports = {
        `gatsby-plugin-react-helmet`,
        `gatsby-plugin-sitemap`
    ]
-=======
-      {
-         name:'contact',
-         link:'/contact'
-      },
-      {
-         name:'experience',
-         link:'/experience'
-      },
-      {
-         name:'work',
-         link:'/work'
-      }
-    ]
-  },
-  plugins: []
->>>>>>> 4a7d173dde76fcd61c4e462ad359b58de1ea0738
 }

@@ -9,7 +9,6 @@ function Header(props) {
   //make rounded edges on header buttons
   const [showMobileNav, setShowMobileNav] = useState(false);
 
-<<<<<<< HEAD
   if(title !== "index"){
     backgroundColor = "black";
     textColor = "white";
@@ -31,12 +30,6 @@ function Header(props) {
       buttonStyles[hovered].backgroundColor = "black"
       buttonStyles[hovered].color = "white"
     }
-=======
-  var pageName = props.pageName;
-  var logoLink = <Link className="hidden" to="/">JCC</Link>;
-  if(pageName !== "index"){
-    logoLink = <Link className="left" to="/">JCC</Link>
->>>>>>> 4a7d173dde76fcd61c4e462ad359b58de1ea0738
   }
   
   return (
