@@ -47,7 +47,7 @@ module.exports = {
          options: {
             plugins: [
                /*
-               //really good except weird header on the top of the boxes that I cannot geet rid of
+               //really good except weird header on the top of the boxes that I cannot get rid of
                {
                   resolve: `gatsby-remark-highlight-code`,
                   options: {

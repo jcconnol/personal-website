@@ -8,6 +8,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/blog.css"
 
+//TODO try to make this work because looks better
 //deckDeckGoElement();
 
 const BlogPostTemplate = ({ data, location }) => {
