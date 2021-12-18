@@ -9,10 +9,27 @@ function Header(props) {
   //make rounded edges on header buttons
   const [showMobileNav, setShowMobileNav] = useState(false);
 
-  var pageName = props.pageName;
-  var logoLink = <Link className="hidden" to="/">JCC</Link>;
-  if(pageName !== "index"){
-    logoLink = <Link className="left" to="/">JCC</Link>
+  if(title !== "index"){
+    backgroundColor = "black";
+    textColor = "white";
+  }
+
+
+  //change only one on hover
+  var buttonStyles = [];
+  for(var i = 0; i < 9; i++){
+    buttonStyles.push({ color: textColor, backgroundColor: backgroundColor});
+  }
+
+  if(hovered){
+    if(buttonStyles[hovered].backgroundColor === "black"){
+      buttonStyles[hovered].backgroundColor = "white"
+      buttonStyles[hovered].color = "black"
+    }
+    else{
+      buttonStyles[hovered].backgroundColor = "black"
+      buttonStyles[hovered].color = "white"
+    }
   }
   
   return (

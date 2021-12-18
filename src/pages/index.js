@@ -5,6 +5,8 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/index.css"
 
+//TODO change left header JCC text to icon image - with hover inverse colors
+//TODO add github squares at the bottom of the index page
 export default function Index() {
   return (
     <Layout>
