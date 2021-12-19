@@ -125,8 +125,7 @@ body {
   }
   
   .twinkling{
-    z-index:0;
-    background-color: #000;
+    z-index:1;
     background: url("/images/twinkling.png") repeat top center;
     -moz-animation:move-twink-back 200s linear infinite;
     -ms-animation:move-twink-back 200s linear infinite;
