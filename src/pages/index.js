@@ -34,12 +34,8 @@ export default function Index() {
           description={"Main page for the personal website of John Connolly."}
         />
         <div>
-            <div className="stars"
-              
-            ></div>
-            <div className="twinkling"
-            
-            ></div>
+            <div className="stars"></div>
+            <div className="twinkling"></div>
             <div className="shooting-star-container">
               {
                 shootingStarObject.map(element => (
