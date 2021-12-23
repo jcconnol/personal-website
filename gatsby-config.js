@@ -47,7 +47,7 @@ module.exports = {
          options: {
             plugins: [
                /*
-               //really good except weird header on the top of the boxes that I cannot geet rid of
+               //really good except weird header on the top of the boxes that I cannot get rid of
                {
                   resolve: `gatsby-remark-highlight-code`,
                   options: {
@@ -108,6 +108,22 @@ module.exports = {
           policy: [{ userAgent: '*', allow: '/' }]
         }
       },
+      {
+         resolve: `gatsby-plugin-google-analytics`,
+         options: {
+           // The property ID; the tracking code won't be generated without it
+           trackingId: "G-Z7KPCC51LW",
+           // Defines where to place the tracking script - `true` in the head and `false` in the body
+           head: true,
+           // Setting this parameter is optional
+           //anonymize: true,
+           // Setting this parameter is also optional
+           respectDNT: true,           
+           // Defers execution of google analytics script after page load
+           defer: false,
+           enableWebVitalsTracking: true,
+         },
+       },
        `gatsby-plugin-catch-links`,
        `gatsby-plugin-react-helmet`,
        `gatsby-plugin-sitemap`
