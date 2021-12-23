@@ -3,6 +3,8 @@
     padding-left: 10%;
     padding-right: 10%;
     color: black;
+    margin: auto;
+    text-align: center;
 }
 
 .contact-name-input {
