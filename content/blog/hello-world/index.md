@@ -10,11 +10,11 @@ So in the spirit of this being my first blog post, it is only natural to start w
 
 ## History ##
 
-The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book, A Tutorial Introduction to the Language B. In this book the phrase "hi!" is output, because a character constant is limited to 4 ASCII characters. This phrase was later written in [C](https://www.cprogramming.com/) and lengthened to the full "Hello World!" in 1974 by a [Bell Labs](https://www.belllabs.com/) internal memo. After being formally published in the 1978 book _The C Programming Language_, and since then programmers from all over have used it to confirm that their source code, compiler (or JVM, etc.) and configuration are all correct. 
+The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book, _A Tutorial Introduction to the Language B_. In this book, the phrase "hi!" is output, because a character constant is limited to 4 ASCII characters. This phrase was later written in [C](https://www.cprogramming.com/) and lengthened to the full "Hello World!" in 1974 by a [Bell Labs](https://www.belllabs.com/) internal memo. After being formally published in the 1978 book _The C Programming Language_, programmers from all over have used it to confirm that their source code, compiler (or JVM, etc.), and configuration are all correct. 
 
 ## Implementation ##
 
-"Hello World!" can be output with any programming language which means that implementations of "Hello World!" can vary greatly. The differences for prevalent programming languages can vary in length and complexity. Take the _Assembly_ example below:
+"Hello World!" can be output with any programming language, which means that implementations of "Hello World!" can vary greatly. The differences for prevalent programming languages can vary in length and complexity. Take the _Assembly_ example below:
 
 ```vim
     global _main
@@ -54,17 +54,17 @@ message_end:
 ```
 
 
-Considered a very low level programming language, meaning being closer to being written in 1's and 0's, these 17 lines of Assembly code can be compiled on a Windows machine to output "Hello World!".
+Considered a very low level programming language (meaning being closer to being written in 1's and 0's), these 17 lines of Assembly code can be compiled on a Windows machine to output "Hello World!".
 
-On the opposite side of the spectrum, JavaScript is a modern programming language with a lot of modern functionality such as console logging. This allows someone to output "Hello World!" with just a single line:
+On the opposite side of the spectrum, JavaScript is a modern programming language with a lot of modern functionality, such as console logging. This allows someone to output "Hello World!" with just a single line:
 
 ```js
 console.log("Hello World");
 ```
 
-This makes modern development and therefore implementation of simple outputs such as "Hello World!" a much simpler task. 
+This makes modern development and implementation of simple outputs such as "Hello World!" a much simpler task. 
 
-With the perks of modern life though, come people that just like to watch the world burn. So there are also another breed of programming languages that are just made to be difficult. Take [Brainf***](https://en.wikipedia.org/wiki/Brainfuck) for example. The following is an implementation of "Hello World!":
+With the perks of modern life, however, come people that just like to watch the world burn, hence the birth of a breed of programming languages that are intentionally made to be difficult. Take [Brainf***](https://en.wikipedia.org/wiki/Brainfuck) , for example. The following is an implementation of "Hello World!":
 
 ```brainfuck 
 --<-<<+[
@@ -80,4 +80,4 @@ Although Brainf*** is not a widely used programming language (and definitely not
 
 ## Conclusion ##
 
-In the end, "Hello World!" is a very prevalent and relevant tradition in the world of programming and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.
+In the end, "Hello World!" is a very prevalent and relevant tradition in the world of programming, and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.
