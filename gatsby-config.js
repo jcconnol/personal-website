@@ -91,7 +91,7 @@ module.exports = {
        {
           resolve: `gatsby-plugin-manifest`,
           options: {
-             name: `gatsby-starter-defalt`,
+             name: `gatsby-starter-default`,
              short_name: `starter`,
              start_url: `/`,
              background_color: `#663399`,
@@ -109,19 +109,27 @@ module.exports = {
         }
       },
       {
-         resolve: `gatsby-plugin-google-analytics`,
+         resolve: `gatsby-plugin-google-gtag`,
          options: {
-           // The property ID; the tracking code won't be generated without it
-           trackingId: "G-Z7KPCC51LW",
-           // Defines where to place the tracking script - `true` in the head and `false` in the body
-           head: true,
-           // Setting this parameter is optional
-           //anonymize: true,
-           // Setting this parameter is also optional
-           respectDNT: true,           
-           // Defers execution of google analytics script after page load
-           defer: false,
-           enableWebVitalsTracking: true,
+           trackingIds: [
+             "G-Z7KPCC51LW" // Google Analytics / GA
+           ],
+           // This object gets passed directly to the gtag config command
+           // This config will be shared across all trackingIds
+           /*
+           gtagConfig: {
+             optimize_id: "G-Z7KPCC51LW",
+             anonymize_ip: false,
+             cookie_expires: 0,
+           },
+           */
+           // This object is used for configuration specific to this plugin
+           pluginConfig: {
+             // Puts tracking script in the head instead of the body
+             head: false,
+             // Setting this parameter is also optional
+             //respectDNT: true,
+           },
          },
        },
        `gatsby-plugin-catch-links`,
