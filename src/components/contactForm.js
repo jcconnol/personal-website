@@ -11,11 +11,18 @@ const ContactForm = (props) => {
         name: ""
     });
 
-    let showError = false;
-    let showSuccess = false;
-    let showForm = true;
+    const initialFormDisplay = Object.freeze({
+        showError: false,
+        showSuccess: false,
+        showForm: true
+    });
+
+    var showError = false;
+    var showSuccess = false;
+    var showForm = true;
 
     const [formData, updateFormData] = React.useState(initialFormData);
+    const [formDisplay, updateFormDisplay] = React.useState(initialFormDisplay);
 
     const handleChange = (e) => {
         updateFormData({
@@ -26,6 +33,11 @@ const ContactForm = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+
+        updateFormData({
+            ...formData,
+            null: null
+        });
 
         let headers = {
             headers: {
@@ -41,25 +53,33 @@ const ContactForm = (props) => {
         
         await axios.post(process.env.GATSBY_EMAIL_ENDPOINT, emailConfig, headers)
           .then(res => {
-            showError = false;
-            showSuccess = true;
-            showForm = false;
+            updateFormDisplay({
+                ...formDisplay,
+                showError: false,
+                showSuccess: true,
+                showForm: false
+            });
             console.log("passed");
 
           }).catch((e) => {
             console.log(e);
             //show error
-            showError = true;
-            showSuccess = false;
-            showForm = true;
+
+            updateFormDisplay({
+                ...formDisplay,
+                showError: true,
+                showSuccess: false,
+                showForm: true
+            });
             console.log("failed");
+
           });
     }
 
     return (
         <div className="contact-form">
             {
-                showForm ?
+                formDisplay.showForm ?
                     <form acceptCharset="UTF-8" onSubmit={e => {handleSubmit(e)}} target="_blank">
                         <div>
                             <label>Full Name</label>
@@ -98,18 +118,18 @@ const ContactForm = (props) => {
                             </div>
                         </div>
                         <br />
+                        {
+                            formDisplay.showError ?
+                                <p><b>Something went wrong, please try again!</b></p>
+                            : null
+                        }
+                        {
+                            formDisplay.showSuccess ?
+                                <p><b>Thank you for your message! I will contact you as soon as I can.</b></p>
+                            : null
+                        }
                         <button className="contact-submit-button" type="submit">SUBMIT</button>
                     </form>
-                : null
-            }
-            {
-                showError ?
-                    <p><b>Something went wrong, please try again!</b></p>
-                : null
-            }
-            {
-                showSuccess ?
-                    <p><b>Thank you for your message! I should contact you shortly.</b></p>
                 : null
             }
         </div>

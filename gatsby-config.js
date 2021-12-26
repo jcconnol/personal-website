@@ -21,23 +21,23 @@ module.exports = {
          },
          {
             name:'About',
-            link:'/about'
+            link:'/about/'
          },
          {
             name:'Contact',
-            link:'/contact'
+            link:'/contact/'
          },
          {
             name:'Experience',
-            link:'/experience'
+            link:'/experience/'
          },
          {
             name:'Work',
-            link:'/work'
+            link:'/work/'
          },
          {
             name:'Blog',
-            link:'/blog'
+            link:'/blog/'
          }
       ]
    },
