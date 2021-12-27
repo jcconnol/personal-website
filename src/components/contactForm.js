@@ -32,6 +32,7 @@ const ContactForm = (props) => {
     };
 
     const handleSubmit = async (e) => {
+        //TODO disable button on click until end 
         e.preventDefault()
 
         updateFormData({
@@ -120,16 +121,16 @@ const ContactForm = (props) => {
                         <br />
                         {
                             formDisplay.showError ?
-                                <p><b>Something went wrong, please try again!</b></p>
-                            : null
-                        }
-                        {
-                            formDisplay.showSuccess ?
-                                <p><b>Thank you for your message! I will contact you as soon as I can.</b></p>
+                                <p><b>Something went wrong, please try again later or email me directly.</b></p>
                             : null
                         }
                         <button className="contact-submit-button" type="submit">SUBMIT</button>
                     </form>
+                : null
+            }
+            {
+                formDisplay.showSuccess ?
+                    <p><b>Thank you for your message! I will contact you as soon as I can.</b></p>
                 : null
             }
         </div>
