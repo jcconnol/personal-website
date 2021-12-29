@@ -17,8 +17,10 @@ This example is using a [Raspberry Pi 4](https://www.raspberrypi.com/products/ra
 Assuming you already have a Raspberry Pi 4 you should be able to follow these steps:
 
 * Buy a cheap IR sensor, like [this one](https://www.amazon.com/barterine-KY-022-Infrared-Receiver-Arduino/dp/B01MG1LFA0/ref=sr_1_20?keywords=arduino+ir+receiver+module&qid=1640665624&sprefix=arduino+ir+receiver+%2Caps%2C89&sr=8-20), on Amazon.
-* Wire the 
-* (((((((((((((TODO insert diagram of wiring)))))))))))))
+* Wire the 5V VCC on the IR sensor to the Raspberry Pi 5V pin, the ground receiver pin to the ground pin on the Raspberry Pi and the receiver's data pin the the Raspberry Pi's GPIO 18 pin as shown in the diagram below.
+
+![wiring diagram for IR sensor to Raspberry Pi](/images/RPI-Infrared-sensor-wiring.jpg)
+
 * Grab your favorite TV remote and fire up your Raspberry Pi.
 * The first-time setup for the Pi will not be covered in these steps but if you need help with that then instructions can be found [here](https://www.raspberrypi.com/documentation/computers/getting-started.html).
 * With your Raspberry Pi ready to go, open the terminal and run the following command to update and upgrade the OS
@@ -110,7 +112,7 @@ The most basic element of all of this is infrared, a form of light that has a fr
 We obviously cannot see infrared light with the naked eye but in essence your remote control is just a fancy flashlight that, when a button is clicked, it quickly turns the flashlight on and off in a certain pattern that the receiver can understand.
 
 The whole process looks like the following:
-![light spectrum diagram](/images/ir-remote.png)
+![IR signal from remote to IR receiver to Raspberry Pi](/images/ir-remote.png)
 
 Each command that the remote control puts out has two parts, the device address, to tell the receiver what device is trying to send a command, then the actual command, such as "volume up."
 These commands and device addresses are sent in binary to the receiver. One command might be 000 0001 and another might be 000 1001, but the receiver is configured to know what the binary commands are and execute them accordingly. This whole process is a lot like in old movies when people would communicate by shining a flashlight at their far away friend and turn it on and off in morse code. 
