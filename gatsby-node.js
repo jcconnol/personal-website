@@ -113,4 +113,3 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
-
