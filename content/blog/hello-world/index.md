@@ -16,7 +16,7 @@ The first version of "Hello World!" was coined in Brian Kernigham’s 1972 book,
 
 "Hello World!" can be output with any programming language, which means that implementations of "Hello World!" can vary greatly. The differences for prevalent programming languages can vary in length and complexity. Take the _Assembly_ example below:
 
-```vim
+```bash 
     global _main
     extern  _GetStdHandle@4
     extern  _WriteFile@20
@@ -66,7 +66,7 @@ This makes modern development and implementation of simple outputs such as "Hell
 
 With the perks of modern life, however, come people that just like to watch the world burn, hence the birth of a breed of programming languages that are intentionally made to be difficult. Take [Brainf***](https://en.wikipedia.org/wiki/Brainfuck) , for example. The following is an implementation of "Hello World!":
 
-```brainfuck 
+```brainfuck  
 --<-<<+[
     +[
         <+>--->->->-<<<
