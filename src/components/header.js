@@ -9,11 +9,11 @@ export default function Header(props) {
   var title = props.title;
 
   var menuItems = [
-    {name: 'About', path: '/about'},
-    {name: 'Experience', path: '/experience'},
-    {name: 'Work', path: '/work'},
-    {name: 'Contact', path: '/contact'},
-    {name: 'Blog', path: '/blog'}
+    {name: 'About', path: '/about/'},
+    {name: 'Experience', path: '/experience/'},
+    {name: 'Work', path: '/work/'},
+    {name: 'Contact', path: '/contact/'},
+    {name: 'Blog', path: '/blog/'}
   ];
   
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -70,11 +70,6 @@ export default function Header(props) {
               )
             })
           }
-          <a href={Resume} 
-              style={buttonStyles[7]}
-              onMouseEnter={() => setStyles(7)}
-              onMouseLeave={() => setStyles()}
-          >Resume</a>
           <div className="header-icon" onClick={() => setShowMobileNav(!showMobileNav)}>&#9776;</div>
         </div>
         <div className={showMobileNav ? "mobile-nav menu-section" : "hidden menu-section" }>
