@@ -21,23 +21,23 @@ module.exports = {
          },
          {
             name:'About',
-            link:'/about'
+            link:'/about/'
          },
          {
             name:'Contact',
-            link:'/contact'
+            link:'/contact/'
          },
          {
             name:'Experience',
-            link:'/experience'
+            link:'/experience/'
          },
          {
             name:'Work',
-            link:'/work'
+            link:'/work/'
          },
          {
             name:'Blog',
-            link:'/blog'
+            link:'/blog/'
          }
       ]
    },
@@ -91,7 +91,7 @@ module.exports = {
        {
           resolve: `gatsby-plugin-manifest`,
           options: {
-             name: `gatsby-starter-defalt`,
+             name: `gatsby-starter-default`,
              short_name: `starter`,
              start_url: `/`,
              background_color: `#663399`,
