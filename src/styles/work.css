@@ -14,7 +14,7 @@
    
 }
 
-@media (max-width: 850px) {
+@media (max-width: 725px) {
     .project {
         max-width: 100%;
         flex: 1 0 100%;
@@ -25,7 +25,7 @@
     }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 725px) {
     .project {
         max-width: 50%;
         flex: 1 0 50%;
@@ -44,4 +44,12 @@
         color: black;
         padding: 2%;
     }
+}
+
+.project-imgs {
+    display: flex;
+}
+
+.project-imgs a{
+    padding: 0 6%;    
 }

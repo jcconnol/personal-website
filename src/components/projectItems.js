@@ -1,5 +1,11 @@
 const projectData = [
     {
+        title: 'Image Sizer for Pages',
+        description: 'A published chrome extension for finding the image sizes of all images on the page to help identify possible SEO pain points.',
+        projectLink: 'https://chrome.google.com/webstore/detail/page-image-sizer/iiokcphcgmoplnmlbcmglcekflboodkc',
+        githubLink: 'https://github.com/jcconnol/site-image-sizer-chrome-extension'
+    },
+    {
       title: 'Game Automations',
       description: 'A set of python scripts that use win32gui to open a browser and auto play browser games.\n Two of the browser games are Doge Coin Miner and Sushi Roll.',
       projectLink: '',
