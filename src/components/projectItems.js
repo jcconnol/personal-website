@@ -16,12 +16,6 @@ const projectData = [
         description: 'A website that allows a user to login, setup and schedule a sanity check or regression test to run on their website. This makes it easy and affordable for test engineers to have the results of an automated test be emailed to them.',
         projectLink: '',
         githubLink: ''
-    },
-    {
-        title: '',
-        description: '',
-        projectLink: '',
-        githubLink: ''
     }
 ];
 
