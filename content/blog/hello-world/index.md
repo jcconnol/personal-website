@@ -80,4 +80,8 @@ Although Brainf*** is not a widely used programming language (and definitely not
 
 ## Conclusion ##
 
+<<<<<<< HEAD
 In the end, "Hello World!" is a very prevalent and relevant tradition in the world of programming, and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.
+=======
+In the end, "Hello World!" is a very prevalent and relevant tradition in the world of programming, and it does not seem to be going anywhere anytime soon. This is proof that even in this technological age, where everything changes almost all the time, there are still traditions from before the age of floppy disks.
+>>>>>>> add-rpi-lirc-post

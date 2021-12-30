@@ -9,11 +9,11 @@ export default function Header(props) {
   var title = props.title;
 
   var menuItems = [
-    {name: 'About', path: '/about/'},
-    {name: 'Experience', path: '/experience/'},
-    {name: 'Work', path: '/work/'},
-    {name: 'Contact', path: '/contact/'},
-    {name: 'Blog', path: '/blog/'}
+    {name: 'About', path: '/about'},
+    {name: 'Experience', path: '/experience'},
+    {name: 'Work', path: '/work'},
+    {name: 'Contact', path: '/contact'},
+    {name: 'Blog', path: '/blog'}
   ];
   
   const [showMobileNav, setShowMobileNav] = useState(false);
