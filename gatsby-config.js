@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://johncc.me`
+
 require("dotenv").config({
    path: `.env.${process.env.NODE_ENV}`,
 })
@@ -10,7 +12,7 @@ module.exports = {
          summary: 'Engineer, Builder, Tester based out of Nashville, TN.'
       },
       description: 'A blog and portfolio of John Connolly, a software engineer and QA based out of Nashville, TN.',
-      siteUrl: `https://johnconnolly.gatsbyjs.io`,
+      siteUrl: siteUrl,
       social: {
          twitter: `johnconnolly`,
       },
@@ -100,30 +102,30 @@ module.exports = {
              icon: `src/images/logo.png`
           }
        },
+       `gatsby-plugin-sitemap`,
        {
         resolve: 'gatsby-plugin-robots-txt',
         options: {
-          host: 'https://johnconnolly.gatsbyjs.io',
-          sitemap: 'https://johnconnolly.gatsbyjs.io/sitemap.xml',
+          host: siteUrl,
+          sitemap: siteUrl+'/sitemap/sitemap.xml',
           policy: [{ userAgent: '*', allow: '/' }]
         }
       },
        {
          resolve: `gatsby-plugin-google-gtag`,
          options: {
-           // You can add multiple tracking ids and a pageview event will be fired for all of them.
            trackingIds: [
-             "G-RXE2DK22J7"
+             "G-Q3DWE1QGJL"
            ],
            // This object is used for configuration specific to this plugin
            pluginConfig: {
              // Puts tracking script in the head instead of the body
-             head: true
+             head: true,
+             respectDNT: false
            },
          },
        },
        `gatsby-plugin-catch-links`,
-       `gatsby-plugin-react-helmet`,
-       `gatsby-plugin-sitemap`
+       `gatsby-plugin-react-helmet`
    ]
 }
