@@ -1,3 +1,4 @@
+
 const siteUrl = process.env.URL || `https://johncc.me`
 
 require("dotenv").config({
@@ -12,9 +13,9 @@ module.exports = {
          summary: 'Engineer, Builder, Tester based out of Nashville, TN.'
       },
       description: 'A blog and portfolio of John Connolly, a software engineer and QA based out of Nashville, TN.',
-      siteUrl: siteUrl,
+      "siteUrl": siteUrl,
       social: {
-         twitter: `johnconnolly`,
+         twitter: `johncconnolly`,
       },
       menuLinks:[
          {
@@ -68,6 +69,14 @@ module.exports = {
             ],
          },
       },
+      {
+         resolve: `gatsby-plugin-sitemap`,
+         options: {
+            output: "/",
+            createLinkInHead: true,
+            entryLimit: 4000
+         }
+      },
       `gatsby-plugin-less`,
       {
          resolve: `gatsby-source-filesystem`,
@@ -102,12 +111,11 @@ module.exports = {
              icon: `src/images/logo.png`
           }
        },
-       `gatsby-plugin-sitemap`,
        {
         resolve: 'gatsby-plugin-robots-txt',
         options: {
           host: siteUrl,
-          sitemap: siteUrl+'/sitemap/sitemap.xml',
+          sitemap: siteUrl+'/sitemap-0.xml',
           policy: [{ userAgent: '*', allow: '/' }]
         }
       },
