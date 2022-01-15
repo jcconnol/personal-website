@@ -52,10 +52,10 @@ export default function Index() {
             </div>
           <Main>
               <div className="main-inner-container">
-              <h1>
+              <h1 className="fadeIn">
                   <span className="index-name">John Connolly</span>
               </h1>
-              <h3>
+              <h3 className="fadeIn">
                   Engineer. Builder. Tester.
               </h3>
               </div>

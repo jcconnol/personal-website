@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <Layout>
       <Header title={"about"}/>
-      <div className="page-content about-content">
+      <div className="page-content about-content fadeIn">
         <Seo
           title={"About"}
           description={"About page for John Connolly. A tale about my life's story and work history."}

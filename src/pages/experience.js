@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <Layout>
       <Header title="experience"/>
-      <div className="page-content experience-content">
+      <div className="page-content experience-content fadeIn">
         <Seo
           title={"Experience"}
           description={"Experience page for John Connolly. A list of my past work history."}

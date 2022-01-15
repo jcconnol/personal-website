@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <Layout>
       <Header title="contact"/>
-      <div className="page-content contact-content">
+      <div className="page-content contact-content fadeIn">
         <Seo
           title={"Contact"}
           description={"Contact page for John Connolly. Feel free to message me through social media or fill out the form below."}
