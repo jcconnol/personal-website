@@ -20,7 +20,7 @@ module.exports = {
       menuLinks:[
          {
             name:'index',
-            link:'/'
+            link:''
          },
          {
             name:'About',
@@ -72,7 +72,6 @@ module.exports = {
       {
          resolve: `gatsby-plugin-sitemap`,
          options: {
-            output: "/",
             createLinkInHead: true,
             entryLimit: 4000
          }
@@ -116,7 +115,7 @@ module.exports = {
         options: {
           host: siteUrl,
           sitemap: siteUrl+'/sitemap-0.xml',
-          policy: [{ userAgent: '*', allow: '/' }]
+          policy: [{ userAgent: '*', disallow: '' }]
         }
       },
        {
