@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import MobileNav from "../components/mobileNav"
-import Resume from "./static/resume.pdf"
 import "../styles/header.css"
 
 export default function Header(props) {

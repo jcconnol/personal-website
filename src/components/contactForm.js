@@ -17,10 +17,6 @@ const ContactForm = (props) => {
         showForm: true
     });
 
-    var showError = false;
-    var showSuccess = false;
-    var showForm = true;
-
     const [formData, updateFormData] = React.useState(initialFormData);
     const [formDisplay, updateFormDisplay] = React.useState(initialFormDisplay);
 
