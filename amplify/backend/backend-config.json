@@ -4,6 +4,10 @@
       "service": "amplifyhosting",
       "type": "cicd",
       "lastPushTimeStamp": "2022-05-28T04:13:24.147Z"
+    },
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation"
     }
   }
 }
