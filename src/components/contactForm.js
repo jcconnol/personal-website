@@ -47,6 +47,8 @@ const ContactForm = (props) => {
           name: formData.name,
           message: formData.message
         };
+
+        console.log(process.env.GATSBY_EMAIL_ENDPOINT)
         
         await axios.post(process.env.GATSBY_EMAIL_ENDPOINT, emailConfig, headers)
           .then(res => {
@@ -56,7 +58,6 @@ const ContactForm = (props) => {
                 showSuccess: true,
                 showForm: false
             });
-            console.log("passed");
 
           }).catch((e) => {
             console.log(e);
