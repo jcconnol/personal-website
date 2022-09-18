@@ -47,10 +47,8 @@ const ContactForm = (props) => {
           name: formData.name,
           message: formData.message
         };
-
-        console.log(process.env.GATSBY_EMAIL_ENDPOINT)
         
-        await axios.post(process.env.GATSBY_EMAIL_ENDPOINT, emailConfig, headers)
+        await axios.post("https://yc5ez9aoni.execute-api.us-east-2.amazonaws.com/dev/api/email", emailConfig, headers)
           .then(res => {
             updateFormDisplay({
                 ...formDisplay,
