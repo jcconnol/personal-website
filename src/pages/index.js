@@ -4,9 +4,10 @@ import Main from "../components/main"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Seo from "../components/seo"
+import ProjectCard from "../components/projectCard"
+import IndexPageItems from "../components/indexPageItems"
 import "../styles/index.css"
 
-//TODO change left header JCC text to icon image - with hover inverse colors
 //TODO add github squares at the bottom of the index page
 export default function Index() {
   var SHOOTING_STAR_MAX_NUMBER = 15;
@@ -50,19 +51,34 @@ export default function Index() {
                 ))
               }
             </div>
-          <Main>
+          <Main className="">
               <div className="main-inner-container">
-              <h1 className="fadeIn">
-                  <span className="index-name">John Connolly</span>
-              </h1>
-              <h3 className="fadeIn">
-                  Engineer. Builder. Tester.
-              </h3>
+                <h1 className="fadeIn index-header-text">
+                    <span className="index-name">John Connolly</span>
+                </h1>
+                <h3 className="fadeIn index-subtext">
+                    Engineer. Tester. Automator.
+                </h3>
+                <div className="index-card-container fadeIn">
+                  {
+                    IndexPageItems.map(item => {
+                      return (
+                        <div className="index-card">
+                          <ProjectCard 
+                            title={item.title}
+                            description={item.description}
+                            projectLink={item.projectLink}
+                            githubLink={item.githubLink}
+                          />
+                        </div>
+                      )
+                    })
+                  }
+                </div>
               </div>
           </Main>
         </div>  
       </div>
-      <Footer pageName="index" />
     </Layout>
   )
 }

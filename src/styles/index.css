@@ -113,6 +113,7 @@
 
 
 .stars, .twinkling {
+    height: 100%;
     position:absolute;
     top: 3.5rem;
     left:0;
@@ -125,12 +126,14 @@
   }
   
   .stars {
+    height: 100%;
     background:url("/images/stars.png") repeat top center;
     background-color: #000;
     z-index:1;
   }
   
   .twinkling{
+    height: 100%;
     z-index:1;
     background: url("/images/twinkling.png") repeat top center;
     -moz-animation:move-twink-back 200s linear infinite;
@@ -138,4 +141,32 @@
     -o-animation:move-twink-back 200s linear infinite;
     -webkit-animation:move-twink-back 200s linear infinite;
     animation:move-twink-back 200s linear infinite;
-  }
+}
+
+.index-header-text {
+    text-align: center;
+}
+
+.index-subtext {
+    text-align: center;
+}
+
+.index-card-container {
+    padding: 5% 15%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    min-height: 5%;
+    align-items: flex-start;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+}
+
+.index-card {
+    width: 30%;
+    padding: auto;
+    justify-content: center;
+}
