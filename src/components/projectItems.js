@@ -12,16 +12,27 @@ const projectData = [
         githubLink: 'https://github.com/jcconnol/prank-chrome-extension'
     },
     {
+        title: 'Text Generation Bot',
+        description: 'This uses Markov Chains to generate different and unique text base on topic. For example, generate a unique poem or rap song.',
+        projectLink: 'https://main.d1y4xtb1b93rjd.amplifyapp.com/'
+    },
+    {
         title: 'Personal Jira Queue',
         description: 'A simple Amplify hosted React App with a NodeJS API, this allows for you to make a list of tickets that you are working on so other coworkers can see what you are going to work on next.',
         projectLink: '',
-        githubLink: 'https://github.com/jcconnol/jira-queue'
+        githubLink: 'https://github.com/jcconnol/jira-queue',
+        projectLink: 'https://www.jiraqueue.com/',
     },
     {
         title: 'This website',
         description: 'The personal website of me, John Connolly, that you are currently looking at and that is written in GatsbyJS.',
         projectLink: '',
         githubLink: 'https://github.com/jcconnol/personal-website'
+    },
+    {
+        title: 'VT Texting Fact Site',
+        description: 'Similar to CatFacts, this service can send texts to your friends for a small fee.',
+        projectLink: 'https://main.d39urt07cxgk7r.amplifyapp.com/'
     },
     {
       title: 'Game Automations',
@@ -38,8 +49,7 @@ const projectData = [
     {
         title: 'Regression Test Service',
         description: 'A website that allows a user to login, setup and schedule a sanity check or regression test to run on their website. This makes it easy and affordable for test engineers to have the results of an automated test be emailed to them.',
-        projectLink: '',
-        githubLink: ''
+        projectLink: 'https://main.d1csuiyp1dzz8c.amplifyapp.com/'
     }
 ];
 
