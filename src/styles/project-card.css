@@ -27,6 +27,15 @@
     justify-content: center;
 }
 
+.index-project-imgs {
+    display: inline-flex;
+}
+
+.index-project-imgs a {
+    padding: 0% 15%;
+    justify-content: center;
+}
+
 .index-folder-project-image {
     height: 32px;
     width: 32px;
