@@ -34,7 +34,7 @@ export default function Index() {
           title={"JCC"}
           description={"Main page for the personal website of John Connolly."}
         />
-        <div>
+          <div className="space-container">
             <div className="stars"></div>
             <div className="twinkling"></div>
             <div className="shooting-star-container">
@@ -51,32 +51,32 @@ export default function Index() {
                 ))
               }
             </div>
-          <Main className="">
-              <div className="main-inner-container">
-                <h1 className="fadeIn index-header-text">
-                    <span className="index-name">John Connolly</span>
-                </h1>
-                <h3 className="fadeIn index-subtext">
-                    Engineer. Tester. Automator.
-                </h3>
-                <div className="index-card-container fadeIn">
-                  {
-                    IndexPageItems.map(item => {
-                      return (
-                        <div className="index-card">
-                          <ProjectCard 
-                            title={item.title}
-                            description={item.description}
-                            projectLink={item.projectLink}
-                            githubLink={item.githubLink}
-                          />
-                        </div>
-                      )
-                    })
-                  }
+            <Main className="">
+                <div className="main-inner-container">
+                  <h1 className="fadeIn index-header-text">
+                      <span className="index-name">John Connolly</span>
+                  </h1>
+                  <h3 className="fadeIn index-subtext">
+                      Engineer. Tester. Automator.
+                  </h3>
+                  <div className="index-card-container fadeIn">
+                    {
+                      IndexPageItems.map(item => {
+                        return (
+                          <div className="index-card">
+                            <ProjectCard 
+                              title={item.title}
+                              description={item.description}
+                              projectLink={item.projectLink}
+                              githubLink={item.githubLink}
+                            />
+                          </div>
+                        )
+                      })
+                    }
+                  </div>
                 </div>
-              </div>
-          </Main>
+            </Main>
         </div>  
       </div>
     </Layout>

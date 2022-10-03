@@ -6,6 +6,7 @@
 }
 
 .index-project-inner {
+    color: white;
     border: 5px solid white;
     text-align: center;
     background-color: transparent;
@@ -34,4 +35,8 @@
 
 .index-blank-card {
     background-color: transparent;
+}
+
+.index-project-card {
+    padding-bottom: inherit;
 }

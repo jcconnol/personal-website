@@ -5,6 +5,14 @@
     z-index: 2;
 }
 
+.space-container {
+    height: 100%;
+}
+
+.content {
+    z-index: 3;
+}
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -21,13 +29,14 @@
 }
 
 .shooting-star-container {
+    height: 90%;
     position: absolute;
     top: 10%;
     right: 0;
     bottom: 0;
     left: 0;
     overflow: hidden;
-    z-index: 3;
+    z-index: 1;
 }
 
 .shooting-star {
@@ -152,7 +161,8 @@
 }
 
 .index-card-container {
-    padding: 5% 15%;
+    padding: 0 15%;
+    margin-bottom: 5%;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
