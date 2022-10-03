@@ -31,6 +31,11 @@
     height: 32px;
     width: 32px;
     margin-right: 5%;
+    filter: invert(1);
+}
+
+.index-github-project-image {
+    filter: invert(1);
 }
 
 .index-blank-card {

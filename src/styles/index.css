@@ -161,7 +161,8 @@
 }
 
 .index-card-container {
-    padding: 0 15%;
+    
+    padding: 2% 15% 0 15%;
     margin-bottom: 5%;
     flex-wrap: wrap;
     margin: auto;
