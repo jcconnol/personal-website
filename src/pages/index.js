@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout"
 import Main from "../components/main"
 import Header from "../components/header"
-import Footer from "../components/footer"
 import Seo from "../components/seo"
 import ProjectCard from "../components/projectCard"
 import IndexPageItems from "../components/indexPageItems"

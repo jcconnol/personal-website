@@ -46,6 +46,21 @@ module.exports = {
    },
    plugins: [
       {
+         resolve: 'gatsby-plugin-newrelic',
+         options: {
+           config: {
+               instrumentationType: 'proAndSPA',
+               accountId: '3624824',
+               trustKey: '3624824',
+               agentID: '1120124909',
+               licenseKey: 'NRJS-afc80195979bf7a4161',
+               applicationID: '1120124909',
+               beacon: 'bam.nr-data.net',
+               errorBeacon: 'bam.nr-data.net'
+           }
+         }
+      },
+      {
          resolve: `gatsby-transformer-remark`,
          options: {
             plugins: [
