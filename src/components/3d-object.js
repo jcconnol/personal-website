@@ -1,13 +1,17 @@
 import * as React from "react"
 import "../styles/3d-object.css"
 import { Unity, useUnityContext } from "react-unity-webgl";
+import BuildLoader from "./static/unity-build/build.loader"
+import Webgl from "./static/unity-build/webgl.data"
+import Framework from "./static/unity-build/build.framework.js"
+import Wasm from "./static/unity-build/build.wasm"
 
 const ThreeDUnityObject = (props) => {
     const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-        loaderUrl: "unity-build/build.loader.js",
-        dataUrl: "unity-build/webgl.data",
-        frameworkUrl: "unity-build/build.framework.js",
-        codeUrl: "unity-build/build.wasm",
+        loaderUrl: BuildLoader,
+        dataUrl: Webgl,
+        frameworkUrl: Framework,
+        codeUrl: Wasm,
     });
     
     return (
