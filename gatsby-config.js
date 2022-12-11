@@ -116,8 +116,8 @@ module.exports = {
        {
          resolve: `gatsby-source-filesystem`,
          options: {
-           name: `unity`,
-           path: `${__dirname}/src/unity-test/`,
+           name: `unity-test`,
+           path: `${__dirname}/src/unity-test/unity/build/`,
          },
        },
        {
