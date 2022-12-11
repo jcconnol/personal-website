@@ -114,6 +114,13 @@ module.exports = {
          },
        },
        {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+           name: `unity`,
+           path: `${__dirname}/src/unity-test/`,
+         },
+       },
+       {
           resolve: `gatsby-plugin-manifest`,
           options: {
              name: `gatsby-starter-default`,
