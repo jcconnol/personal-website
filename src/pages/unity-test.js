@@ -8,7 +8,6 @@ import "../styles/contact.css"
 
 export default function Index() {
   return (
-    <ThreeDUnityObject
-    />
+    <ThreeDUnityObject />
   )
 }
